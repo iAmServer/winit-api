@@ -1,0 +1,25 @@
+[project]
+name = "winit"
+version = "0.1.0"
+description = "This is a take home test"
+authors = [
+    {name = "Ola Dayo",email = "dasther@outlook.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi (>=0.121.1,<0.122.0)",
+    "uvicorn (>=0.38.0,<0.39.0)",
+    "pytest (>=9.0.0,<10.0.0)",
+    "bs4 (>=0.0.2,<0.0.3)",
+    "httpx (>=0.28.1,<0.29.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^7.0.0"
+

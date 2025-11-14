@@ -1,0 +1,1995 @@
+<html ng-app="mcsPortal" style=""
+    class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
+
+<head>
+    <style type="text/css">
+        [uib-typeahead-popup].dropdown-menu {
+            display: block;
+        }
+    </style>
+    <style type="text/css">
+        .uib-time input {
+            width: 50px;
+        }
+    </style>
+    <style type="text/css">
+        [uib-tooltip-popup].tooltip.top-left>.tooltip-arrow,
+        [uib-tooltip-popup].tooltip.top-right>.tooltip-arrow,
+        [uib-tooltip-popup].tooltip.bottom-left>.tooltip-arrow,
+        [uib-tooltip-popup].tooltip.bottom-right>.tooltip-arrow,
+        [uib-tooltip-popup].tooltip.left-top>.tooltip-arrow,
+        [uib-tooltip-popup].tooltip.left-bottom>.tooltip-arrow,
+        [uib-tooltip-popup].tooltip.right-top>.tooltip-arrow,
+        [uib-tooltip-popup].tooltip.right-bottom>.tooltip-arrow,
+        [uib-tooltip-html-popup].tooltip.top-left>.tooltip-arrow,
+        [uib-tooltip-html-popup].tooltip.top-right>.tooltip-arrow,
+        [uib-tooltip-html-popup].tooltip.bottom-left>.tooltip-arrow,
+        [uib-tooltip-html-popup].tooltip.bottom-right>.tooltip-arrow,
+        [uib-tooltip-html-popup].tooltip.left-top>.tooltip-arrow,
+        [uib-tooltip-html-popup].tooltip.left-bottom>.tooltip-arrow,
+        [uib-tooltip-html-popup].tooltip.right-top>.tooltip-arrow,
+        [uib-tooltip-html-popup].tooltip.right-bottom>.tooltip-arrow,
+        [uib-tooltip-template-popup].tooltip.top-left>.tooltip-arrow,
+        [uib-tooltip-template-popup].tooltip.top-right>.tooltip-arrow,
+        [uib-tooltip-template-popup].tooltip.bottom-left>.tooltip-arrow,
+        [uib-tooltip-template-popup].tooltip.bottom-right>.tooltip-arrow,
+        [uib-tooltip-template-popup].tooltip.left-top>.tooltip-arrow,
+        [uib-tooltip-template-popup].tooltip.left-bottom>.tooltip-arrow,
+        [uib-tooltip-template-popup].tooltip.right-top>.tooltip-arrow,
+        [uib-tooltip-template-popup].tooltip.right-bottom>.tooltip-arrow,
+        [uib-popover-popup].popover.top-left>.arrow,
+        [uib-popover-popup].popover.top-right>.arrow,
+        [uib-popover-popup].popover.bottom-left>.arrow,
+        [uib-popover-popup].popover.bottom-right>.arrow,
+        [uib-popover-popup].popover.left-top>.arrow,
+        [uib-popover-popup].popover.left-bottom>.arrow,
+        [uib-popover-popup].popover.right-top>.arrow,
+        [uib-popover-popup].popover.right-bottom>.arrow,
+        [uib-popover-html-popup].popover.top-left>.arrow,
+        [uib-popover-html-popup].popover.top-right>.arrow,
+        [uib-popover-html-popup].popover.bottom-left>.arrow,
+        [uib-popover-html-popup].popover.bottom-right>.arrow,
+        [uib-popover-html-popup].popover.left-top>.arrow,
+        [uib-popover-html-popup].popover.left-bottom>.arrow,
+        [uib-popover-html-popup].popover.right-top>.arrow,
+        [uib-popover-html-popup].popover.right-bottom>.arrow,
+        [uib-popover-template-popup].popover.top-left>.arrow,
+        [uib-popover-template-popup].popover.top-right>.arrow,
+        [uib-popover-template-popup].popover.bottom-left>.arrow,
+        [uib-popover-template-popup].popover.bottom-right>.arrow,
+        [uib-popover-template-popup].popover.left-top>.arrow,
+        [uib-popover-template-popup].popover.left-bottom>.arrow,
+        [uib-popover-template-popup].popover.right-top>.arrow,
+        [uib-popover-template-popup].popover.right-bottom>.arrow {
+            top: auto;
+            bottom: auto;
+            left: auto;
+            right: auto;
+            margin: 0;
+        }
+
+        [uib-popover-popup].popover,
+        [uib-popover-html-popup].popover,
+        [uib-popover-template-popup].popover {
+            display: block !important;
+        }
+    </style>
+    <style type="text/css">
+        .uib-datepicker-popup.dropdown-menu {
+            display: block;
+            float: none;
+            margin: 0;
+        }
+
+        .uib-button-bar {
+            padding: 10px 9px 2px;
+        }
+    </style>
+    <style type="text/css">
+        .uib-position-measure {
+            display: block !important;
+            visibility: hidden !important;
+            position: absolute !important;
+            top: -9999px !important;
+            left: -9999px !important;
+        }
+
+        .uib-position-scrollbar-measure {
+            position: absolute !important;
+            top: -9999px !important;
+            width: 50px !important;
+            height: 50px !important;
+            overflow: scroll !important;
+        }
+
+        .uib-position-body-scrollbar-measure {
+            overflow: scroll !important;
+        }
+    </style>
+    <style type="text/css">
+        .uib-datepicker .uib-title {
+            width: 100%;
+        }
+
+        .uib-day button,
+        .uib-month button,
+        .uib-year button {
+            min-width: 100%;
+        }
+
+        .uib-left,
+        .uib-right {
+            width: 100%
+        }
+    </style>
+    <style type="text/css">
+        .ng-animate.item:not(.left):not(.right) {
+            -webkit-transition: 0s ease-in-out left;
+            transition: 0s ease-in-out left
+        }
+    </style>
+    <style type="text/css">
+        @charset "UTF-8";
+
+        [ng\:cloak],
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak,
+        .ng-hide:not(.ng-hide-animate) {
+            display: none !important;
+        }
+
+        ng\:form {
+            display: block;
+        }
+
+        .ng-animate-shim {
+            visibility: hidden;
+        }
+
+        .ng-anchor {
+            position: absolute;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9,IE=EmulateIE10,chrome=1">
+    <meta name="description" content="Superior Court of California, County of Santa Clara Case Portal">
+    <meta name="author" content="Coderthemes">
+    <base href="/">
+    <title>Public Portal - Superior Court of California, County of Santa Clara </title>
+
+    <link href="/Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Content/css/angular-toastr.css" rel="stylesheet">
+    <link href="/Content/css/angular-datatables.css" rel="stylesheet">
+    <link href="/Content/css/datatables.bootstrap.min.css" rel="stylesheet">
+    <link href="/Content/css/buttons.dataTables.css" rel="stylesheet">
+    <link href="/Content/css/ngDialog.css" rel="stylesheet">
+    <link href="/Content/css/ngDialog-theme-default.css" rel="stylesheet">
+    <link href="/Content/css/bootstrap-switch.css" rel="stylesheet">
+
+    <link href="/Content/css/core.css" rel="stylesheet">
+    <link href="/Content/css/components.css" rel="stylesheet">
+    <link href="/Content/css/icons.css" rel="stylesheet">
+    <link href="/Content/css/pages.css" rel="stylesheet">
+    <link href="/Content/css/menu.css" rel="stylesheet">
+    <link href="/Content/css/favorites.css" rel="stylesheet">
+    <link href="/Content/css/responsive.css" rel="stylesheet">
+    <link href="/Content/css/bootstrap-nav-wizard.css" rel="stylesheet">
+    <link href="/Content/css/menu.custom.css" rel="stylesheet">
+    <link href="/Content/css/angularPrint.css" rel="stylesheet">
+    <link href="/Content/css/custom.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/Scripts/tools/web/viewer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script type="text/javascript" async=""
+        src="https://www.googletagmanager.com/gtag/js?id=G-8XNDN1BPF1&amp;cx=c&amp;_slc=1"></script>
+    <script async="" src="https://scripts.clarity.ms/0.8.40/clarity.js"></script>
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.clarity.ms/tag/r1ms5es0c4"></script>
+    <script async="" src="//cdn.raygun.io/raygun4js/raygun.min.js"></script>
+    <script type="text/javascript" async="" charset="utf-8"
+        src="https://www.gstatic.com/recaptcha/releases/naPR4A6FAh-yZLuCX253WaZq/recaptcha__en.js"
+        crossorigin="anonymous"
+        integrity="sha384-qNLemyKcD24MKXWUXqTaOJ9ESai7afdFb4RzK+fa3lNAf2knAo6+3YtXf5YGXQM5"></script>
+    <script src="/Scripts/libs/html5shiv.js"></script>
+    <script src="/Scripts/libs/respond.js"></script>
+
+    <script src="/Scripts/libs/modernizr.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script type="text/javascript">
+        !function (a, b, c, d, e, f, g, h) {
+            a.RaygunObject = e, a[e] = a[e] || function () {
+                (a[e].o = a[e].o || []).push(arguments)
+            }, f = b.createElement(c), g = b.getElementsByTagName(c)[0],
+                f.async = 1, f.src = d, g.parentNode.insertBefore(f, g), h = a.onerror, a.onerror = function (b, c, d, f, g) {
+                    h && h(b, c, d, f, g), g || (g = new Error(b)), a[e].q = a[e].q || [], a[e].q.push({
+                        e: g
+                    })
+                }
+        }(window, document, "script", "//cdn.raygun.io/raygun4js/raygun.min.js", "rg4js");
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "r1ms5es0c4");
+    </script>
+</head>
+
+<body data-new-gr-c-s-check-loaded="8.934.0" data-gr-ext-installed="" class="vsc-initialized">
+
+
+    <!-- Navigation Bar-->
+    <header ng-controller="navigationController as vm" id="topnav">
+        <div class="topbar-main">
+            <div class="container">
+                <!-- Logo container-->
+                <!-- ngIf: vm.profile.loggedIn === false -->
+                <div class="logo" ng-if="vm.profile.loggedIn === false">
+                    <a ui-sref="home" class="logo" href="/">
+                        <img src="/Content/images/publicPortalLogo.svg" class="sealPP" alt="">
+                    </a>
+                </div><!-- end ngIf: vm.profile.loggedIn === false -->
+                <!-- ngIf: vm.profile.loggedIn === true -->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+                <!-- End Logo container-->
+            </div>
+        </div>
+        <!-- End topbar -->
+        <!-- Navbar Start -->
+        <div class="navbar-custom">
+            <div class="container nav-container">
+                <div id="navigation" data-ng-init="vm.init()">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <!-- ngIf: vm.profile.loggedIn == false -->
+                        <li class="has-submenu" ng-if="vm.profile.loggedIn == false" ui-sref-active="active">
+                            <a ui-sref="home" href="/"><i class="md md-home"></i>HOME</a>
+                        </li><!-- end ngIf: vm.profile.loggedIn == false -->
+                        <!-- ngIf: vm.profile.loggedIn == true -->
+                        <li class="dropdown" ui-sref-active="active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                                    class="md md-search"></i>SEARCH</a>
+                            <ul class="dropdown-menu">
+                                <li><a ui-sref="search" href="/search">CASE INFORMATION</a></li>
+                                <!-- ngIf: vm.profile.loggedIn -->
+
+
+                            </ul>
+
+                        </li>
+                        <li class="has-submenu hidden" ui-sref-active="active">
+                            <a ui-sref="document" href="/document"><i class="md md-document"></i>Document Viewer</a>
+                        </li>
+                        <!-- ngIf: vm.profile.loggedIn && vm.payload.jpawrole == 'ADMIN' -->
+
+                        <li class="dropdown" ui-sref-active="active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                                    class="md md-event"></i>CALENDARS</a>
+                            <ul class="dropdown-menu">
+                                <li><a ui-sref="calendar({casetype: 'Civil'})" href="/calendar/Civil">Civil</a> </li>
+                                <li><a ui-sref="calendar({casetype: 'Probate'})" href="/calendar/Probate">Probate</a>
+                                </li>
+                                <li><a ui-sref="calendar({casetype: 'Family'})" href="/calendar/Family">Family –
+                                        Juvenile Dependency</a> </li>
+                                <li><a ui-sref="calendar({casetype: 'Juvenile'})" href="/calendar/Juvenile">Juvenile
+                                        Justice</a> </li>
+                                <li><a ui-sref="calendar({casetype: 'Traffic'})" href="/calendar/Traffic">Traffic</a>
+                                </li>
+                                <li><a ui-sref="calendar({casetype: 'Criminal - Hall of Justice'})"
+                                        href="/calendar/Criminal%20-%20Hall%20of%20Justice">Criminal - Hall of
+                                        Justice</a></li>
+                                <li><a ui-sref="calendar({casetype: 'Criminal - Palo Alto'})"
+                                        href="/calendar/Criminal%20-%20Palo%20Alto">Criminal - Palo Alto</a></li>
+                                <li><a ui-sref="calendar({casetype: 'Criminal - South County'})"
+                                        href="/calendar/Criminal%20-%20South%20County">Criminal - South County</a></li>
+                            </ul>
+                        </li>
+
+                        <li ng-show="vm.getFeatureFlag('trafficRedirect') === 'false'" class="has-submenu"
+                            ui-sref-active="active" style="">
+                            <a ui-sref="traffic" href="/traffic"><i class="md md-directions-car"></i>TRAFFIC PAYMENT</a>
+                        </li>
+                        <li ng-show="vm.getFeatureFlag('trafficRedirect')=== 'true'" class="has-submenu ng-hide"
+                            ui-sref-active="active">
+                            <a href="https://traffic.scscourt.org/traffic"><i class="md md-directions-car"></i>TRAFFIC
+                                PAYMENT</a>
+                        </li>
+                        <!-- ngIf: !vm.profile.loggedIn -->
+                        <li ng-if="!vm.profile.loggedIn" class="has-submenu" ui-sref-active="active">
+                            <a ui-sref="remotehearing" href="/remotehearing"><i class="md md-videocam"></i>REMOTE
+                                HEARING LOOKUP</a>
+                        </li><!-- end ngIf: !vm.profile.loggedIn -->
+                        <li class="dropdown" ui-sref-active="active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                                    class="far fa-calendar-plus fa-xs"></i>RESERVE</a>
+                            <ul class="dropdown-menu">
+                                <!-- ngRepeat: cat in vm.courtScheduleOptions -->
+                                <li ng-repeat="cat in vm.courtScheduleOptions" class="" style="">
+                                    <a ng-href="https://reservations.scscourt.org/create-reservation/1"
+                                        href="https://reservations.scscourt.org/create-reservation/1">Court Hearing</a>
+                                </li><!-- end ngRepeat: cat in vm.courtScheduleOptions -->
+                            </ul>
+                        </li>
+
+                        <!-- ngIf: !vm.profile.loggedIn -->
+                        <li ng-if="!vm.profile.loggedIn" class="has-submenu nav-item-float" ui-sref-active="active">
+                            <a ui-sref="login" href="/login"><i class="md md-person"></i>LOGIN </a>
+                        </li><!-- end ngIf: !vm.profile.loggedIn -->
+                        <!-- ngIf: vm.profile.loggedIn -->
+                        <!-- ngIf: vm.profile.loggedIn -->
+
+                    </ul>
+                    <!-- End navigation menu -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Navigation Bar-->
+    <!-- =======================
+             ===== START PAGE ======
+             ======================= -->
+
+    <div class="wrapper">
+        <div class="container">
+
+
+            <!-- uiView:  -->
+            <div ui-view="" autoscroll="true" class="" style="">
+                <div class="row" ng-controller="partySearchController as vm" ng-init="vm.init()">
+                    <div class="col-md-12">
+                        <div class="card-box">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h4>
+                                        Party Search Request for John Smith
+                                    </h4>
+                                </div>
+                                <div class="col-sm-12 table-scroll">
+
+
+
+                                    <div id="tblPartySearchResults_wrapper"
+                                        class="dataTables_wrapper form-inline no-footer">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="dataTables_length" id="tblPartySearchResults_length">
+                                                    <label>Show <select name="tblPartySearchResults_length"
+                                                            aria-controls="tblPartySearchResults"
+                                                            class="form-control input-sm">
+                                                            <option value="-1">All</option>
+                                                            <option value="10">10</option>
+                                                            <option value="25">25</option>
+                                                            <option value="50">50</option>
+                                                            <option value="100">100</option>
+                                                        </select> entries</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div id="tblPartySearchResults_filter" class="dataTables_filter">
+                                                    <label>Search:<input type="search" class="form-control input-sm"
+                                                            placeholder=""
+                                                            aria-controls="tblPartySearchResults"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table id="tblPartySearchResults" datatable="" dt-options="vm.dtOptions"
+                                            dt-columns="vm.dtColumns" dt-instance="vm.dtInstance"
+                                            dt-column-defs="vm.dtColumnDefs"
+                                            class="table table-responsive table-striped table-bordered dataTable no-footer"
+                                            style="display: table; width: 2347px;" role="grid"
+                                            aria-describedby="tblPartySearchResults_info">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th class="printRemove sorting" tabindex="0"
+                                                        aria-controls="tblPartySearchResults" rowspan="1" colspan="1"
+                                                        style="width: 334px;"
+                                                        aria-label="View: activate to sort column ascending">View</th>
+                                                    <th class="sorting" tabindex="0"
+                                                        aria-controls="tblPartySearchResults" rowspan="1" colspan="1"
+                                                        style="width: 217px;"
+                                                        aria-label="Case Number: activate to sort column ascending">Case
+                                                        Number</th>
+                                                    <th class="sorting" tabindex="0"
+                                                        aria-controls="tblPartySearchResults" rowspan="1" colspan="1"
+                                                        style="width: 920px;"
+                                                        aria-label="Case Style: activate to sort column ascending">Case
+                                                        Style</th>
+                                                    <th class="sorting" tabindex="0"
+                                                        aria-controls="tblPartySearchResults" rowspan="1" colspan="1"
+                                                        style="width: 217px;"
+                                                        aria-label="Case Status: activate to sort column ascending">Case
+                                                        Status</th>
+                                                    <th class="sorting" tabindex="0"
+                                                        aria-controls="tblPartySearchResults" rowspan="1" colspan="1"
+                                                        style="width: 334px;"
+                                                        aria-label="Case Type: activate to sort column ascending">Case
+                                                        Type</th>
+                                                    <th class="sorting_desc" tabindex="0"
+                                                        aria-controls="tblPartySearchResults" rowspan="1" colspan="1"
+                                                        style="width: 217px;" aria-sort="descending"
+                                                        aria-label="Filing Date: activate to sort column ascending">
+                                                        Filing Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTg5MDYyMQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTg5MDYyMQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25TR080266</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Smith, John Queally</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">11/5/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTg0OTMwMw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTg0OTMwMw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25FL002584</td>
+                                                    <td>XXXXXXXX</td>
+                                                    <td>Active</td>
+                                                    <td>Dissolution w/o Minor Children</td>
+                                                    <td class="sorting_1">8/18/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTg0NjcyOA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTg0NjcyOA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV472449</td>
+                                                    <td>John Smith vs Eton Corporation</td>
+                                                    <td>Active</td>
+                                                    <td>Breach of Contract/Warranty Unlimited (06)</td>
+                                                    <td class="sorting_1">8/11/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTgzODkxOA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTgzODkxOA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2511628</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Smith, John Richard</td>
+                                                    <td>Sentenced</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">7/25/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTgwMTgxNw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTgwMTgxNw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2507956</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Smith, John Richard</td>
+                                                    <td>Dismissed</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">5/21/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTc5ODI5MQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTc5ODI5MQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2507464</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Smith, John William</td>
+                                                    <td>Active</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">5/13/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTc3MjAzOA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTc3MjAzOA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25TR023604</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        SMITH, JOHN PATRICK</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">4/2/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTcwMzczMQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTcwMzczMQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR093496</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        SMITH, JOHN ALLEN</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">12/30/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY5MjIzNA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY5MjIzNA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV453100</td>
+                                                    <td>Gabriel Ramos et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">12/2/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY4NjQ5Mg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY4NjQ5Mg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV452414</td>
+                                                    <td>Andrew Mahaffey et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">11/21/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY4NTc0Nw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY4NTc0Nw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV452231</td>
+                                                    <td>Albert Gantt et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">11/20/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY4NDg2Nw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY4NDg2Nw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV452120</td>
+                                                    <td>Craig Bigler et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">11/19/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY4NDg3NA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY4NDg3NA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV452123</td>
+                                                    <td>Marc Reynolds et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">11/19/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY3NTM2Mw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY3NTM2Mw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV451183</td>
+                                                    <td>Adam Eaton et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">11/7/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY3NTkyOQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY3NTkyOQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV451224</td>
+                                                    <td>Christopher Steere et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">11/7/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY3NjU5MA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY3NjU5MA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV451269</td>
+                                                    <td>Dean Davis et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">11/7/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY2NzI2Mw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY2NzI2Mw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV450281</td>
+                                                    <td>Aaron Furlong et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">10/25/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY2NzI2Mw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY2NzI2Mw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV450281</td>
+                                                    <td>Aaron Furlong et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">10/25/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY2NzMxNA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY2NzMxNA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV450301</td>
+                                                    <td>Aaron Lynch et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">10/25/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY0MjkxNg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY0MjkxNg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV449589</td>
+                                                    <td>Andres Mayo et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">10/16/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY0MzIyMQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY0MzIyMQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV449636</td>
+                                                    <td>David Gregor et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">10/16/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY0MzIyOA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY0MzIyOA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV449637</td>
+                                                    <td>Laurie Deakins et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">10/16/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTYxMTUwNA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTYxMTUwNA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV448199</td>
+                                                    <td>Aaron Lynch et al vs Google LLC</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">9/26/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTU3OTA2MQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTU3OTA2MQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV446998</td>
+                                                    <td>Alexa Gonzales et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">9/11/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTU3OTA2MQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTU3OTA2MQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV446998</td>
+                                                    <td>Alexa Gonzales et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">9/11/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTU3MDU0NQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTU3MDU0NQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV446792</td>
+                                                    <td>Jazzmin Krueger et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">9/6/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTU3MDQ3Nw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTU3MDQ3Nw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV446777</td>
+                                                    <td>James Starr et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">9/5/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ4NTEwNQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ4NTEwNQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR050482</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Smith, John Meredith</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">7/8/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ1MzkyNQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ1MzkyNQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV438456</td>
+                                                    <td>Rosie White et al vs GOOGLE LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">5/7/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ1MzEzMA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ1MzEzMA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV438243</td>
+                                                    <td>Ralphel Walton et al vs GOOGLE LLC,</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">5/6/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ0OTU1OQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ0OTU1OQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV437206</td>
+                                                    <td>Timothy Murphy, Jr. et al vs GOOGLE LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">4/29/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ0NzIxOA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ0NzIxOA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV436519</td>
+                                                    <td>Dan Obryan et al vs GOOGLE LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">4/23/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ0NzI1Nw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ0NzI1Nw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV436534</td>
+                                                    <td>David Wallis, Sr. et al vs GOOGLE LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">4/23/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDU4ODY0OQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDU4ODY0OQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2205596</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        SMITH, JOHN, III</td>
+                                                    <td>Consolidated</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">5/13/2022</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDU1NTAzMw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDU1NTAzMw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>22TR015750</td>
+                                                    <td>Santa Clara County
+                                                        vs.
+                                                        SMITH, JOHN RICHARD, 2</td>
+                                                    <td>Open</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">2/28/2022</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDU1MTI4Nw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDU1MTI4Nw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>22TR013663</td>
+                                                    <td>The People of the State of California
+                                                        vs.
+                                                        Smith, John Lee, 2</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">2/16/2022</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDU0MzkwMw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDU0MzkwMw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2201059</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA vs. SMITH, JOHN, III</td>
+                                                    <td>Sentenced</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">2/1/2022</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDQwOTA0NQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDQwOTA0NQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>21SC085289</td>
+                                                    <td>John Smith vs Robert Garcia</td>
+                                                    <td>Dismissed</td>
+                                                    <td>Small Claims $1501 - $5000</td>
+                                                    <td class="sorting_1">6/7/2021</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDM2Mjc3NQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDM2Mjc3NQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>20DV000940</td>
+                                                    <td>Michael Romkee vs John Smith, III</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>DV Prevention w/o Minor Children</td>
+                                                    <td class="sorting_1">12/17/2020</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDM1NTE1Mw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDM1NTE1Mw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>20SC084500</td>
+                                                    <td>Kil Kwak et al vs John Smith &amp; Holly Furlanic Trust</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Small Claims $1501 - $5000</td>
+                                                    <td class="sorting_1">10/27/2020</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDI3MTY3MQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDI3MTY3MQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>20CV363353</td>
+                                                    <td>Cammie Chen vs John Smith, MD</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Medical Malpractice Unlimited (45)</td>
+                                                    <td class="sorting_1">2/18/2020</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDI0ODQ0OA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDI0ODQ0OA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>20WL000012</td>
+                                                    <td>Will of John Smith</td>
+                                                    <td>Active</td>
+                                                    <td>Lodged Will / Codicil - PR8200</td>
+                                                    <td class="sorting_1">1/7/2020</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDIwMzI1Ng==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDIwMzI1Ng%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>19TR113165</td>
+                                                    <td>The People of the State of California
+                                                        vs.
+                                                        SMITH, JOHN</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">10/23/2019</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDE2MDQ4Mg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDE2MDQ4Mg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>19SC079910</td>
+                                                    <td>Travis Williams et al vs John Smith</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Small Claims $1501 - $5000</td>
+                                                    <td class="sorting_1">8/7/2019</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDE1MDc0NQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDE1MDc0NQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>19TR081466</td>
+                                                    <td>The People of the State of California
+                                                        vs.
+                                                        Smith, John Michael</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">7/19/2019</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDEzNjc1MA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDEzNjc1MA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>19TR072901</td>
+                                                    <td>The People of the State of California
+                                                        vs.
+                                                        SMITH, JOHN ALLEN</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">6/25/2019</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDAwNDY1OA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDAwNDY1OA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>B1800905</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        MCCOY, GERARD</td>
+                                                    <td>Sentenced</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">12/3/2018</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTk3MTE0Mw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTk3MTE0Mw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>18TR038060</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Smith, John Lee</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">10/9/2018</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTk2MjQ3Mg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTk2MjQ3Mg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>18CV334707</td>
+                                                    <td>JOHN SMITH et al vs JONATHAN TRUEBA</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Residential Unlawful Detainer Limited (32) - under 10,000</td>
+                                                    <td class="sorting_1">9/18/2018</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTkzMDU1MA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTkzMDU1MA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>18TR016255</td>
+                                                    <td>The People of the State of California
+                                                        vs.
+                                                        Smith, John Searing</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">7/30/2018</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTgzMjQxMQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTgzMjQxMQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>7-17-TR-695770</td>
+                                                    <td>The People of the State of California
+                                                        vs.
+                                                        SMITH, JOHN DERRECK</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">11/14/2017</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTgzMDA1NA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTgzMDA1NA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>7-17-TR-693397</td>
+                                                    <td>The People of the State of California
+                                                        vs.
+                                                        SMITH, JOHN RICHARD</td>
+                                                    <td>Open</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">11/6/2017</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTEyMzIzNQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTEyMzIzNQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>17CV314886</td>
+                                                    <td>American Express Bank, FSB vs John Smith et al</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Other Collections Unlimited (09)</td>
+                                                    <td class="sorting_1">8/22/2017</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTcwOTk1OQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTcwOTk1OQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>7-16-TR-572638</td>
+                                                    <td>The People of the State of California vs. John J. Smith, III
+                                                    </td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">12/3/2016</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTA3NjU5Mg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTA3NjU5Mg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>16CV296057</td>
+                                                    <td>Uria v Sahu</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Auto Unlimited (22)</td>
+                                                    <td class="sorting_1">6/7/2016</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTA3MTIyMw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTA3MTIyMw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>16WL047031</td>
+                                                    <td>Will of John Smith</td>
+                                                    <td>Active</td>
+                                                    <td>Lodged Will / Codicil - PR8200</td>
+                                                    <td class="sorting_1">4/19/2016</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTYyOTUyOQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTYyOTUyOQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>7-16-TR-491672</td>
+                                                    <td>The People of the State of California vs. John M. Smith</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">3/25/2016</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTU3MzkxNA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTU3MzkxNA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>7-15-TR-435780</td>
+                                                    <td>The People of the State of California vs. JOHN L. SMITH</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">10/23/2015</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTM3MzA4',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTM3MzA4"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2015-1-FL-170951</td>
+                                                    <td>John Smith and Dalenna R. Smith</td>
+                                                    <td>Closed/Active</td>
+                                                    <td>Dissolution w/ Minor</td>
+                                                    <td class="sorting_1">4/16/2015</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTQ1OTM5NQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTQ1OTM5NQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>7-14-TR-320820</td>
+                                                    <td>The People of the State of California vs. John D. Smith</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">12/30/2014</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'OTkxODQ4',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/OTkxODQ4"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2014-6-FL-013589</td>
+                                                    <td>Aurora F. Smith and John A. Smith</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Dissolution w/o Minor Children</td>
+                                                    <td class="sorting_1">11/13/2014</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTA5OTg2',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTA5OTg2"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2014-1-FL-169216</td>
+                                                    <td>Debra C. Smith and John R. Smith</td>
+                                                    <td>Active</td>
+                                                    <td>Dissolution w/ Minor</td>
+                                                    <td class="sorting_1">9/22/2014</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDk1Mjkx',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDk1Mjkx"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2014-1-CV-265039</td>
+                                                    <td>Steinbeck Vineyards #1, LLC v. County of San Luis Obispo, et al.
+                                                    </td>
+                                                    <td>Active</td>
+                                                    <td>Other Real Property Unlimited (26)</td>
+                                                    <td class="sorting_1">5/8/2014</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTM4MTQ1Mg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTM4MTQ1Mg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>7-14-TR-242415</td>
+                                                    <td>The People of the State of California vs. John J. Smith</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">4/14/2014</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MjE5MDE2MA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MjE5MDE2MA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C1361798</td>
+                                                    <td>The State of California vs SMITH, JOHN WILLIAMS</td>
+                                                    <td>Inactive</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">2/13/2014</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDU1NDcz',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDU1NDcz"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2013-1-CH-005045</td>
+                                                    <td>John Smith vs Neicsa Jackson</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Civil Harassment</td>
+                                                    <td class="sorting_1">8/6/2013</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MjY4MDAxMQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MjY4MDAxMQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C1361798</td>
+                                                    <td>The State of California vs SMITH, JOHN WILLIAMS</td>
+                                                    <td>Inactive</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">7/24/2013</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MjY3NjI2Nw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MjY3NjI2Nw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C1358083</td>
+                                                    <td>The State of California vs SMITH, JOHN MICHAEL</td>
+                                                    <td>Inactive</td>
+                                                    <td>Complaint - Family Violence</td>
+                                                    <td class="sorting_1">6/7/2013</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTE4MzUwMw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTE4MzUwMw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>2-13-TR-427767</td>
+                                                    <td>The People of the State of California vs. John H. Smith</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">5/17/2013</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MjY2NzE4Ng==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MjY2NzE4Ng%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C1349146</td>
+                                                    <td>The State of California vs SMITH, JOHN WILLIAMS</td>
+                                                    <td>Inactive</td>
+                                                    <td>Complaint - Family Violence</td>
+                                                    <td class="sorting_1">1/28/2013</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDc3NTEz',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDc3NTEz"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2013-1-FL-163848</td>
+                                                    <td>Kieu D. Smith and John M. Smith</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Dissolution w/ Minor</td>
+                                                    <td class="sorting_1">1/18/2013</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDM2NTY2',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDM2NTY2"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2012-1-CV-232434</td>
+                                                    <td>J. Smith Vs R. Guido, Et Al</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Other Judicial Review Unlimited (39)</td>
+                                                    <td class="sorting_1">9/17/2012</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDQ5ODk2',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDQ5ODk2"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2012-1-PR-170553</td>
+                                                    <td>Richard J. Kelley, ESTATE OF</td>
+                                                    <td>Closed/Active</td>
+                                                    <td>Decedent's Estate</td>
+                                                    <td class="sorting_1">6/28/2012</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NDUwMDUw',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NDUwMDUw"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2012-1-PR-170710</td>
+                                                    <td>Willis Frank Rounds Family Trust, TRUST OF</td>
+                                                    <td>Closed/Active</td>
+                                                    <td>Trust</td>
+                                                    <td class="sorting_1">5/17/2012</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'OTg1MzEz',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/OTg1MzEz"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2012-6-FL-007545</td>
+                                                    <td>John J. Smith and Wanda Smith</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Dissolution w/o Minor Children</td>
+                                                    <td class="sorting_1">1/5/2012</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'Mzk5ODg2',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/Mzk5ODg2"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2011-1-CV-209755</td>
+                                                    <td>County Of Santa Clara vs Waste Management, Inc., et al</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Fraud Unlimited (16)</td>
+                                                    <td class="sorting_1">9/22/2011</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'Mzk5MjA1',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/Mzk5MjA1"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2011-1-CV-208913</td>
+                                                    <td>A. Zavala-Flores vs Rosendin Electric, Inc.</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Other PI/PD/WD Unlimited (23)</td>
+                                                    <td class="sorting_1">9/9/2011</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MjE3ODAzMg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MjE3ODAzMg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C1103253</td>
+                                                    <td>The State of California vs SMITH, JOHN WILLIAMS</td>
+                                                    <td>Inactive</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">8/30/2011</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'Mzk3NTgw',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/Mzk3NTgw"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2011-1-CV-206713</td>
+                                                    <td>J. Smith, Petition Of</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Change of Name</td>
+                                                    <td class="sorting_1">8/5/2011</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MjYxNjQ1Ng==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MjYxNjQ1Ng%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C1103253</td>
+                                                    <td>The State of California vs SMITH, JOHN WILLIAMS</td>
+                                                    <td>Inactive</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">3/24/2011</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MjYwNzQ4Nw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MjYwNzQ4Nw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C1090487</td>
+                                                    <td>The State of California vs SMITH, JOHN EARL</td>
+                                                    <td>Inactive</td>
+                                                    <td>Citation - Criminal</td>
+                                                    <td class="sorting_1">10/21/2010</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTAxMDkwNw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTAxMDkwNw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>2009-7-SC-037494</td>
+                                                    <td>Amberwood Gardens vs J. Smith</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Small Claims $1501 - $5000</td>
+                                                    <td class="sorting_1">12/8/2009</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'Mzk5MzkwMA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/Mzk5MzkwMA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>FF931399</td>
+                                                    <td>The State of California vs SMITH, JOHN ALLEN</td>
+                                                    <td>Inactive</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">9/30/2009</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MzI1NDMy',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MzI1NDMy"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2009-1-CV-148070</td>
+                                                    <td>Two Jinn, Inc. vs A. Donohue, et al</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Other Collections Limited (09) - under 10,000</td>
+                                                    <td class="sorting_1">7/23/2009</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MzY3NTYxNw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MzY3NTYxNw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>CC942139</td>
+                                                    <td>The State of California vs SMITH, JOHN WILLIAMS</td>
+                                                    <td>Inactive</td>
+                                                    <td>Complaint - Family Violence</td>
+                                                    <td class="sorting_1">5/6/2009</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MjkzODI1',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MjkzODI1"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2008-1-CV-127718</td>
+                                                    <td>Citibank (South Dakota) N.A. vs J. Smith</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Other Collections Limited (09) - under 10,000</td>
+                                                    <td class="sorting_1">11/14/2008</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MjcyNjA4',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MjcyNjA4"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2008-1-CS-123269</td>
+                                                    <td>County Of Santa Clara vs Hannah R. Davis</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Dept. of Child Support Services (DCSS)</td>
+                                                    <td class="sorting_1">3/19/2008</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'Mjc5NDc1',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/Mjc5NDc1"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2008-1-CV-108043</td>
+                                                    <td>CRC, Inc. vs Silicon Services Consortium, Inc., et al</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Breach of Contract/Warranty Unlimited (06)</td>
+                                                    <td class="sorting_1">3/13/2008</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MjY2Mzkw',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MjY2Mzkw"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2007-1-PR-160692</td>
+                                                    <td>Marie E. Bowen Trust, TRUST OF</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Trust</td>
+                                                    <td class="sorting_1">6/28/2007</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MjE3MDQ5NQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MjE3MDQ5NQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>BB726804</td>
+                                                    <td>The State of California vs SMITH, JOHN ALLEN</td>
+                                                    <td>Inactive</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">5/2/2007</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MjQ4MDAxNg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MjQ4MDAxNg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>BB726804</td>
+                                                    <td>The State of California vs SMITH, JOHN ALLEN</td>
+                                                    <td>Inactive</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">4/27/2007</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MjQzODc0',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MjQzODc0"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2007-1-CV-084380</td>
+                                                    <td>Palo Alto Sanitation Company, A California Corporation vs City
+                                                        Of Palo Alto</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Breach of Contract/Warranty Unlimited (06)</td>
+                                                    <td class="sorting_1">4/20/2007</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MjExMjEy',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MjExMjEy"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2006-1-CV-066236</td>
+                                                    <td>Midland Credit Management, Inc. vs J. Smith</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Other Collections Limited (09) - under 10,000</td>
+                                                    <td class="sorting_1">6/27/2006</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MjI2MjEzNA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MjI2MjEzNA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>CC621948</td>
+                                                    <td>The State of California vs SMITH, JOHN WILLIAMS</td>
+                                                    <td>Inactive</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">5/4/2006</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MjI2MTUxOA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MjI2MTUxOA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>CC618823</td>
+                                                    <td>The State of California vs SMITH, JOHN WILLIAMS</td>
+                                                    <td>Inactive</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">3/30/2006</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MzU2NTQ4Nw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MzU2NTQ4Nw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>CC621948</td>
+                                                    <td>The State of California vs SMITH, JOHN WILLIAMS</td>
+                                                    <td>Inactive</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">3/1/2006</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MzU2MjU1Nw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MzU2MjU1Nw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>CC618823</td>
+                                                    <td>The State of California vs SMITH, JOHN WILLIAMS</td>
+                                                    <td>Inactive</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">1/30/2006</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTkzNzc5',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTkzNzc5"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2005-1-PR-158424</td>
+                                                    <td>Dolores Elizabeth Smith Revocable Trust, TRUST OF</td>
+                                                    <td>Consolidated</td>
+                                                    <td>Trust</td>
+                                                    <td class="sorting_1">10/28/2005</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTc4NTkz',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTc4NTkz"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2005-1-CV-049967</td>
+                                                    <td>Smith Vs Smith</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Other Real Property Unlimited (26)</td>
+                                                    <td class="sorting_1">9/30/2005</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'MTc4NTkz',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/MTc4NTkz"><i class="md md-folder"></i> View
+                                                            Case</a></td>
+                                                    <td>2005-1-CV-049967</td>
+                                                    <td>Smith Vs Smith</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Other Real Property Unlimited (26)</td>
+                                                    <td class="sorting_1">9/30/2005</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="dataTables_info" id="tblPartySearchResults_info"
+                                                    role="status" aria-live="polite">Showing 1 to 100 of 242 entries
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="dataTables_paginate paging_simple_numbers"
+                                                    id="tblPartySearchResults_paginate">
+                                                    <ul class="pagination">
+                                                        <li class="disabled"><a href="#" class="previous"
+                                                                aria-controls="tblPartySearchResults" data-dt-idx="0"
+                                                                tabindex="0"
+                                                                id="tblPartySearchResults_previous">Previous</a></li>
+                                                        <li></li>
+                                                        <li class="active"><a href="#" class=""
+                                                                aria-controls="tblPartySearchResults" data-dt-idx="1"
+                                                                tabindex="0">1</a></li>
+                                                        <li><a href="#" class="" aria-controls="tblPartySearchResults"
+                                                                data-dt-idx="2" tabindex="0">2</a></li>
+                                                        <li><a href="#" class="" aria-controls="tblPartySearchResults"
+                                                                data-dt-idx="3" tabindex="0">3</a></li>
+                                                        <li><a href="#" class="next"
+                                                                aria-controls="tblPartySearchResults" data-dt-idx="4"
+                                                                tabindex="0" id="tblPartySearchResults_next">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <toaster-container></toaster-container>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert alert-info col-md-12 ng-hide" ng-show="vm.searchErrorMessage !== ''">
+                        <h3>
+                            <strong>
+                                <i class="md md-warning"></i>
+
+                            </strong>
+                        </h3>
+                    </div>
+                    <div>
+                        <br><br><br>
+                        <button type="button" class="btn btn-primary waves-effect waves-light m-b-5"
+                            ng-click="vm.goBackSearch()">
+                            <i class="md md-keyboard-arrow-left"></i> <span>Go Back To Search</span>
+                        </button>
+                        <br><br>
+                    </div>
+                </div>
+                <!-- End of Row -->
+            </div>
+
+
+            <!-- Footer -->
+            <footer class="footer text-right">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            2025 © Superior Court of California, County of Santa Clara <br>
+
+                            Build Information: Local - 0 <br>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer -->
+
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- End wrapper -->
+    <script src="/Scripts/libs/jquery.js"></script>
+    <script src="/Scripts/libs/jQuery.print.js"></script>
+    <script src="/Scripts/libs/bootstrap.js"></script>
+    <script src="/Scripts/libs/jquery.dataTables.js"></script>
+    <script src="/Scripts/libs/dataTables.buttons.js"></script>
+    <script src="/Scripts/libs/numeric-comma.js"></script>
+    <script src="/Scripts/libs/buttons.print.js"></script>
+    <script src="/Scripts/libs/chart.js"></script>
+    <script src="/Scripts/libs/underscore.js"></script>
+    <script src="/Scripts/libs/moment.js"></script>
+    <script src="/Scripts/libs/bootstrap-switch.js"></script>
+    <script src="/Scripts/libs/vis.js"></script>
+    <script src="/Scripts/libs/angular.js"></script>
+    <script src="/Scripts/libs/angular-animate.js"></script>
+    <script src="/Scripts/libs/print.min.js"></script>
+    <script src="/Scripts/libs/angular-touch.js"></script>
+    <script src="/Scripts/libs/restangular.js"></script>
+    <script src="/Scripts/libs/angular-ui-router.js"></script>
+    <script src="/Scripts/libs/angular-moment.js"></script>
+    <script src="/Scripts/libs/angular-chart.js"></script>
+    <script src="/Scripts/libs/angular-toastr.js"></script>
+    <script src="/Scripts/libs/angular-toastr.tpls.js"></script>
+    <script src="/Scripts/libs/ngDialog.js"></script>
+    <script src="/Scripts/libs/angular-jwt.js"></script>
+    <script src="/Scripts/libs/angular-datatables.js"></script>
+    <script src="/Scripts/libs/angular-datatables.bootstrap.js"></script>
+    <script src="/Scripts/libs/angular-datatables.buttons.js"></script>
+    <script src="/Scripts/libs/ui-bootstrap.js"></script>
+    <script src="/Scripts/libs/ui-bootstrap-tpls.js"></script>
+    <script src="/Scripts/libs/angular-bootstrap-switch.js"></script>
+    <script src="/Scripts/libs/angular-base64.js"></script>
+    <script src="/Scripts/libs/angular-pdfjs-viewer.js"></script>
+    <script src="/Scripts/libs/angular-filter.js"></script>
+    <script src="/Scripts/libs/calendar.js"></script>
+    <script src="/Scripts/libs/ng-currency.js"></script>
+    <script src="/Scripts/libs/ngMask.js"></script>
+    <script src="/Scripts/libs/fullcalendar.js"></script>
+    <script src="/Scripts/libs/gcal.js"></script>
+    <script src="/Scripts/libs/angular-file-upload.js"></script>
+    <script src="/Scripts/libs/angular-vis.js"></script>
+    <script src="/Scripts/libs/time.js"></script>
+    <script src="/Scripts/libs/angular-pretty-xml.js"></script>
+    <script src="/Scripts/libs/api-check.min.js"></script>
+    <script src="/Scripts/libs/formly.min.js"></script>
+    <script src="/Scripts/libs/angular-formly-templates-bootstrap.min.js"></script>
+    <script src="/Scripts/libs/angular-sanitize.js"></script>
+    <script src="/Scripts/libs/angular-recaptcha.min.js"></script>
+
+    <script src="/Scripts/tools/web/pdf.js"></script>
+    <script src="/Content/js/jquery.app.js"></script>
+    <script src="/Content/js/angularPrint.js"></script>
+    <script src="/Scripts/app.js"></script>
+    <script src="/Scripts/constants/partners.constants.js"></script>
+    <script src="/Scripts/constants/routes.constants.js"></script>
+    <script src="/Scripts/constants/ui.constants.js"></script>
+    <script src="/Scripts/app.routes.js"></script>
+    <script src="/Scripts/services/announcementService.js"></script>
+    <script src="/Scripts/services/authTokenService.js"></script>
+    <script src="/Scripts/services/caseTokenService.js"></script>
+    <script src="/Scripts/services/currentUserService.js"></script>
+    <script src="/Scripts/services/featureFlagService.js"></script>
+    <script src="/Scripts/services/formEncoderService.js"></script>
+    <script src="/Scripts/services/hearingLookupService.js"></script>
+    <script src="/Scripts/services/localStorage.js"></script>
+    <script src="/Scripts/services/notifyService.js"></script>
+    <script src="/Scripts/services/oAuthService.js"></script>
+    <script src="/Scripts/services/reportService.js"></script>
+    <script src="/Scripts/services/restAngularOAuthService.js"></script>
+    <script src="/Scripts/services/rtEventsService.js"></script>
+    <script src="/Scripts/services/searchDataTablesHelpers.js"></script>
+    <script src="/Scripts/services/sessionStorage.js"></script>
+    <script src="/Scripts/services/userModel.js"></script>
+    <script src="/Scripts/directives/announcements.js"></script>
+    <script src="/Scripts/directives/case-details.js"></script>
+    <script src="/Scripts/directives/change-password.js"></script>
+    <script src="/Scripts/directives/pwCheck.js"></script>
+    <script src="/Scripts/directives/search-by-casenumber.js"></script>
+    <script src="/Scripts/directives/security-policy.js"></script>
+    <script src="/Scripts/directives/true-false-shield.js"></script>
+    <script src="/Scripts/directives/warrant-details.js"></script>
+    <script src="/Scripts/filters/location.js"></script>
+    <script src="/Scripts/administration/administration.routes.js"></script>
+    <script src="/Scripts/controllers/advancedSearchController.js"></script>
+    <script src="/Scripts/controllers/alphaSortController.js"></script>
+    <script src="/Scripts/controllers/attorneyConsentDialogController.js"></script>
+    <script src="/Scripts/controllers/attorneyConsentSearchController.js"></script>
+    <script src="/Scripts/controllers/attorneySearchController.js"></script>
+    <script src="/Scripts/controllers/businessSearchController.js"></script>
+    <script src="/Scripts/controllers/calendarController.js"></script>
+    <script src="/Scripts/controllers/calendarLanding.js"></script>
+    <script src="/Scripts/controllers/calendarSearchController.js"></script>
+    <script src="/Scripts/controllers/caseResultController.js"></script>
+    <script src="/Scripts/controllers/caseViewController.js"></script>
+    <script src="/Scripts/controllers/criminalProtectiveOrdersController.js"></script>
+    <script src="/Scripts/controllers/dashboardController.js"></script>
+    <script src="/Scripts/controllers/dcssLongController.js"></script>
+    <script src="/Scripts/controllers/docsController.js"></script>
+    <script src="/Scripts/controllers/favoritesController.js"></script>
+    <script src="/Scripts/controllers/felonyArraignmentController.js"></script>
+    <script src="/Scripts/controllers/fileDateSearchController.js"></script>
+    <script src="/Scripts/controllers/hearingsSearchController.js"></script>
+    <script src="/Scripts/controllers/homeController.js"></script>
+    <script src="/Scripts/controllers/loginController.js"></script>
+    <script src="/Scripts/controllers/logoffController.js"></script>
+    <script src="/Scripts/controllers/minuteOrderController.js"></script>
+    <script src="/Scripts/controllers/navController.js"></script>
+    <script src="/Scripts/controllers/partyAgencySearchController.js"></script>
+    <script src="/Scripts/controllers/partySearchController.js"></script>
+    <script src="/Scripts/controllers/pfnSearchController.js"></script>
+    <script src="/Scripts/controllers/probateNotesController.js"></script>
+    <script src="/Scripts/controllers/probationController.js"></script>
+    <script src="/Scripts/controllers/profileController.js"></script>
+    <script src="/Scripts/controllers/reportController.js"></script>
+    <script src="/Scripts/controllers/searchAttorneyHearingController.js"></script>
+    <script src="/Scripts/controllers/searchController.js"></script>
+    <script src="/Scripts/controllers/trafficSearchController.js"></script>
+    <script src="/Scripts/controllers/warrantsController.js"></script>
+    <script src="/Scripts/controllers/warrantSearchController.js"></script>
+    <script src="/Scripts/controllers/warrantView.js"></script>
+    <script src="/Scripts/partners/partners.routes.js"></script>
+    <script src="/Scripts/partners/controllers/caHomeController.js"></script>
+    <script src="/Scripts/partners/controllers/cpHomeController.js"></script>
+    <script src="/Scripts/partners/controllers/daHomeController.js"></script>
+    <script src="/Scripts/partners/controllers/pdHomeController.js"></script>
+    <script src="/Scripts/partners/controllers/pdidoadoHomeController.js"></script>
+    <script src="/Scripts/partners/controllers/prHomeController.js"></script>
+    <script src="/Scripts/administration/controllers/adminEventsController.js"></script>
+    <script src="/Scripts/administration/controllers/adminStatsController.js"></script>
+    <script src="/Scripts/administration/controllers/manageAccountsController.js"></script>
+    <script src="/Scripts/administration/controllers/manageAgenciesController.js"></script>
+    <script src="/Scripts/administration/controllers/manageAgencyController.js"></script>
+    <script src="/Scripts/googleAnalytics.js"></script>
+    <script src="/Scripts/angular-pdfjs-viewer.js"></script>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>

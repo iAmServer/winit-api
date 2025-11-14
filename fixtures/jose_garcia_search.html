@@ -1,0 +1,2129 @@
+<html ng-app="mcsPortal" style=""
+    class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"
+    dir="ltr">
+
+<head>
+    <style type="text/css">
+        [uib-typeahead-popup].dropdown-menu {
+            display: block;
+        }
+    </style>
+    <style type="text/css">
+        .uib-time input {
+            width: 50px;
+        }
+    </style>
+    <style type="text/css">
+        [uib-tooltip-popup].tooltip.top-left>.tooltip-arrow,
+        [uib-tooltip-popup].tooltip.top-right>.tooltip-arrow,
+        [uib-tooltip-popup].tooltip.bottom-left>.tooltip-arrow,
+        [uib-tooltip-popup].tooltip.bottom-right>.tooltip-arrow,
+        [uib-tooltip-popup].tooltip.left-top>.tooltip-arrow,
+        [uib-tooltip-popup].tooltip.left-bottom>.tooltip-arrow,
+        [uib-tooltip-popup].tooltip.right-top>.tooltip-arrow,
+        [uib-tooltip-popup].tooltip.right-bottom>.tooltip-arrow,
+        [uib-tooltip-html-popup].tooltip.top-left>.tooltip-arrow,
+        [uib-tooltip-html-popup].tooltip.top-right>.tooltip-arrow,
+        [uib-tooltip-html-popup].tooltip.bottom-left>.tooltip-arrow,
+        [uib-tooltip-html-popup].tooltip.bottom-right>.tooltip-arrow,
+        [uib-tooltip-html-popup].tooltip.left-top>.tooltip-arrow,
+        [uib-tooltip-html-popup].tooltip.left-bottom>.tooltip-arrow,
+        [uib-tooltip-html-popup].tooltip.right-top>.tooltip-arrow,
+        [uib-tooltip-html-popup].tooltip.right-bottom>.tooltip-arrow,
+        [uib-tooltip-template-popup].tooltip.top-left>.tooltip-arrow,
+        [uib-tooltip-template-popup].tooltip.top-right>.tooltip-arrow,
+        [uib-tooltip-template-popup].tooltip.bottom-left>.tooltip-arrow,
+        [uib-tooltip-template-popup].tooltip.bottom-right>.tooltip-arrow,
+        [uib-tooltip-template-popup].tooltip.left-top>.tooltip-arrow,
+        [uib-tooltip-template-popup].tooltip.left-bottom>.tooltip-arrow,
+        [uib-tooltip-template-popup].tooltip.right-top>.tooltip-arrow,
+        [uib-tooltip-template-popup].tooltip.right-bottom>.tooltip-arrow,
+        [uib-popover-popup].popover.top-left>.arrow,
+        [uib-popover-popup].popover.top-right>.arrow,
+        [uib-popover-popup].popover.bottom-left>.arrow,
+        [uib-popover-popup].popover.bottom-right>.arrow,
+        [uib-popover-popup].popover.left-top>.arrow,
+        [uib-popover-popup].popover.left-bottom>.arrow,
+        [uib-popover-popup].popover.right-top>.arrow,
+        [uib-popover-popup].popover.right-bottom>.arrow,
+        [uib-popover-html-popup].popover.top-left>.arrow,
+        [uib-popover-html-popup].popover.top-right>.arrow,
+        [uib-popover-html-popup].popover.bottom-left>.arrow,
+        [uib-popover-html-popup].popover.bottom-right>.arrow,
+        [uib-popover-html-popup].popover.left-top>.arrow,
+        [uib-popover-html-popup].popover.left-bottom>.arrow,
+        [uib-popover-html-popup].popover.right-top>.arrow,
+        [uib-popover-html-popup].popover.right-bottom>.arrow,
+        [uib-popover-template-popup].popover.top-left>.arrow,
+        [uib-popover-template-popup].popover.top-right>.arrow,
+        [uib-popover-template-popup].popover.bottom-left>.arrow,
+        [uib-popover-template-popup].popover.bottom-right>.arrow,
+        [uib-popover-template-popup].popover.left-top>.arrow,
+        [uib-popover-template-popup].popover.left-bottom>.arrow,
+        [uib-popover-template-popup].popover.right-top>.arrow,
+        [uib-popover-template-popup].popover.right-bottom>.arrow {
+            top: auto;
+            bottom: auto;
+            left: auto;
+            right: auto;
+            margin: 0;
+        }
+
+        [uib-popover-popup].popover,
+        [uib-popover-html-popup].popover,
+        [uib-popover-template-popup].popover {
+            display: block !important;
+        }
+    </style>
+    <style type="text/css">
+        .uib-datepicker-popup.dropdown-menu {
+            display: block;
+            float: none;
+            margin: 0;
+        }
+
+        .uib-button-bar {
+            padding: 10px 9px 2px;
+        }
+    </style>
+    <style type="text/css">
+        .uib-position-measure {
+            display: block !important;
+            visibility: hidden !important;
+            position: absolute !important;
+            top: -9999px !important;
+            left: -9999px !important;
+        }
+
+        .uib-position-scrollbar-measure {
+            position: absolute !important;
+            top: -9999px !important;
+            width: 50px !important;
+            height: 50px !important;
+            overflow: scroll !important;
+        }
+
+        .uib-position-body-scrollbar-measure {
+            overflow: scroll !important;
+        }
+    </style>
+    <style type="text/css">
+        .uib-datepicker .uib-title {
+            width: 100%;
+        }
+
+        .uib-day button,
+        .uib-month button,
+        .uib-year button {
+            min-width: 100%;
+        }
+
+        .uib-left,
+        .uib-right {
+            width: 100%
+        }
+    </style>
+    <style type="text/css">
+        .ng-animate.item:not(.left):not(.right) {
+            -webkit-transition: 0s ease-in-out left;
+            transition: 0s ease-in-out left
+        }
+    </style>
+    <style type="text/css">
+        @charset "UTF-8";
+
+        [ng\:cloak],
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak,
+        .ng-hide:not(.ng-hide-animate) {
+            display: none !important;
+        }
+
+        ng\:form {
+            display: block;
+        }
+
+        .ng-animate-shim {
+            visibility: hidden;
+        }
+
+        .ng-anchor {
+            position: absolute;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8,IE=EmulateIE9,IE=EmulateIE10,chrome=1">
+    <meta name="description" content="Superior Court of California, County of Santa Clara Case Portal">
+    <meta name="author" content="Coderthemes">
+    <base href="/">
+    <title>Public Portal - Superior Court of California, County of Santa Clara </title>
+
+    <link href="/Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Content/css/angular-toastr.css" rel="stylesheet">
+    <link href="/Content/css/angular-datatables.css" rel="stylesheet">
+    <link href="/Content/css/datatables.bootstrap.min.css" rel="stylesheet">
+    <link href="/Content/css/buttons.dataTables.css" rel="stylesheet">
+    <link href="/Content/css/ngDialog.css" rel="stylesheet">
+    <link href="/Content/css/ngDialog-theme-default.css" rel="stylesheet">
+    <link href="/Content/css/bootstrap-switch.css" rel="stylesheet">
+
+    <link href="/Content/css/core.css" rel="stylesheet">
+    <link href="/Content/css/components.css" rel="stylesheet">
+    <link href="/Content/css/icons.css" rel="stylesheet">
+    <link href="/Content/css/pages.css" rel="stylesheet">
+    <link href="/Content/css/menu.css" rel="stylesheet">
+    <link href="/Content/css/favorites.css" rel="stylesheet">
+    <link href="/Content/css/responsive.css" rel="stylesheet">
+    <link href="/Content/css/bootstrap-nav-wizard.css" rel="stylesheet">
+    <link href="/Content/css/menu.custom.css" rel="stylesheet">
+    <link href="/Content/css/angularPrint.css" rel="stylesheet">
+    <link href="/Content/css/custom.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/Scripts/tools/web/viewer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script async="" src="https://scripts.clarity.ms/0.8.40/clarity.js"></script>
+    <script type="text/javascript" async=""
+        src="https://www.googletagmanager.com/gtag/js?id=G-8XNDN1BPF1&amp;cx=c&amp;_slc=1"></script>
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.clarity.ms/tag/r1ms5es0c4"></script>
+    <script async="" src="//cdn.raygun.io/raygun4js/raygun.min.js"></script>
+    <script type="text/javascript" async="" charset="utf-8"
+        src="https://www.gstatic.com/recaptcha/releases/TkacYOdEJbdB_JjX802TMer9/recaptcha__en.js"
+        crossorigin="anonymous"
+        integrity="sha384-Ft89l3aihBBhSrkZ/Syx/7cCCaryQcJICINmdoWVHhaQefSnqabq/akNl06biiHi"></script>
+    <script src="/Scripts/libs/html5shiv.js"></script>
+    <script src="/Scripts/libs/respond.js"></script>
+
+    <script src="/Scripts/libs/modernizr.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script type="text/javascript">
+        !function (a, b, c, d, e, f, g, h) {
+            a.RaygunObject = e, a[e] = a[e] || function () {
+                (a[e].o = a[e].o || []).push(arguments)
+            }, f = b.createElement(c), g = b.getElementsByTagName(c)[0],
+                f.async = 1, f.src = d, g.parentNode.insertBefore(f, g), h = a.onerror, a.onerror = function (b, c, d, f, g) {
+                    h && h(b, c, d, f, g), g || (g = new Error(b)), a[e].q = a[e].q || [], a[e].q.push({
+                        e: g
+                    })
+                }
+        }(window, document, "script", "//cdn.raygun.io/raygun4js/raygun.min.js", "rg4js");
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "r1ms5es0c4");
+    </script>
+</head>
+
+<body data-new-gr-c-s-check-loaded="8.934.0" data-gr-ext-installed="" class="vsc-initialized"
+    data-new-gr-c-s-loaded="8.934.0">
+
+
+    <!-- Navigation Bar-->
+    <header ng-controller="navigationController as vm" id="topnav">
+        <div class="topbar-main">
+            <div class="container">
+                <!-- Logo container-->
+                <!-- ngIf: vm.profile.loggedIn === false -->
+                <div class="logo" ng-if="vm.profile.loggedIn === false">
+                    <a ui-sref="home" class="logo" href="/">
+                        <img src="/Content/images/publicPortalLogo.svg" class="sealPP" alt="">
+                    </a>
+                </div><!-- end ngIf: vm.profile.loggedIn === false -->
+                <!-- ngIf: vm.profile.loggedIn === true -->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+                <!-- End Logo container-->
+            </div>
+        </div>
+        <!-- End topbar -->
+        <!-- Navbar Start -->
+        <div class="navbar-custom">
+            <div class="container nav-container">
+                <div id="navigation" data-ng-init="vm.init()">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <!-- ngIf: vm.profile.loggedIn == false -->
+                        <li class="has-submenu" ng-if="vm.profile.loggedIn == false" ui-sref-active="active">
+                            <a ui-sref="home" href="/"><i class="md md-home"></i>HOME</a>
+                        </li><!-- end ngIf: vm.profile.loggedIn == false -->
+                        <!-- ngIf: vm.profile.loggedIn == true -->
+                        <li class="dropdown" ui-sref-active="active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                                    class="md md-search"></i>SEARCH</a>
+                            <ul class="dropdown-menu">
+                                <li><a ui-sref="search" href="/search">CASE INFORMATION</a></li>
+                                <!-- ngIf: vm.profile.loggedIn -->
+
+
+                            </ul>
+
+                        </li>
+                        <li class="has-submenu hidden" ui-sref-active="active">
+                            <a ui-sref="document" href="/document"><i class="md md-document"></i>Document Viewer</a>
+                        </li>
+                        <!-- ngIf: vm.profile.loggedIn && vm.payload.jpawrole == 'ADMIN' -->
+
+                        <li class="dropdown" ui-sref-active="active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                                    class="md md-event"></i>CALENDARS</a>
+                            <ul class="dropdown-menu">
+                                <li><a ui-sref="calendar({casetype: 'Civil'})" href="/calendar/Civil">Civil</a> </li>
+                                <li><a ui-sref="calendar({casetype: 'Probate'})" href="/calendar/Probate">Probate</a>
+                                </li>
+                                <li><a ui-sref="calendar({casetype: 'Family'})" href="/calendar/Family">Family –
+                                        Juvenile Dependency</a> </li>
+                                <li><a ui-sref="calendar({casetype: 'Juvenile'})" href="/calendar/Juvenile">Juvenile
+                                        Justice</a> </li>
+                                <li><a ui-sref="calendar({casetype: 'Traffic'})" href="/calendar/Traffic">Traffic</a>
+                                </li>
+                                <li><a ui-sref="calendar({casetype: 'Criminal - Hall of Justice'})"
+                                        href="/calendar/Criminal%20-%20Hall%20of%20Justice">Criminal - Hall of
+                                        Justice</a></li>
+                                <li><a ui-sref="calendar({casetype: 'Criminal - Palo Alto'})"
+                                        href="/calendar/Criminal%20-%20Palo%20Alto">Criminal - Palo Alto</a></li>
+                                <li><a ui-sref="calendar({casetype: 'Criminal - South County'})"
+                                        href="/calendar/Criminal%20-%20South%20County">Criminal - South County</a></li>
+                            </ul>
+                        </li>
+
+                        <li ng-show="vm.getFeatureFlag('trafficRedirect') === 'false'" class="has-submenu"
+                            ui-sref-active="active" style="">
+                            <a ui-sref="traffic" href="/traffic"><i class="md md-directions-car"></i>TRAFFIC PAYMENT</a>
+                        </li>
+                        <li ng-show="vm.getFeatureFlag('trafficRedirect')=== 'true'" class="has-submenu ng-hide"
+                            ui-sref-active="active">
+                            <a href="https://traffic.scscourt.org/traffic"><i class="md md-directions-car"></i>TRAFFIC
+                                PAYMENT</a>
+                        </li>
+                        <!-- ngIf: !vm.profile.loggedIn -->
+                        <li ng-if="!vm.profile.loggedIn" class="has-submenu" ui-sref-active="active">
+                            <a ui-sref="remotehearing" href="/remotehearing"><i class="md md-videocam"></i>REMOTE
+                                HEARING LOOKUP</a>
+                        </li><!-- end ngIf: !vm.profile.loggedIn -->
+                        <li class="dropdown" ui-sref-active="active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                                    class="far fa-calendar-plus fa-xs"></i>RESERVE</a>
+                            <ul class="dropdown-menu">
+                                <!-- ngRepeat: cat in vm.courtScheduleOptions -->
+                                <li ng-repeat="cat in vm.courtScheduleOptions" class="" style="">
+                                    <a ng-href="https://reservations.scscourt.org/create-reservation/1"
+                                        href="https://reservations.scscourt.org/create-reservation/1">Court Hearing</a>
+                                </li><!-- end ngRepeat: cat in vm.courtScheduleOptions -->
+                            </ul>
+                        </li>
+
+                        <!-- ngIf: !vm.profile.loggedIn -->
+                        <li ng-if="!vm.profile.loggedIn" class="has-submenu nav-item-float" ui-sref-active="active">
+                            <a ui-sref="login" href="/login"><i class="md md-person"></i>LOGIN </a>
+                        </li><!-- end ngIf: !vm.profile.loggedIn -->
+                        <!-- ngIf: vm.profile.loggedIn -->
+                        <!-- ngIf: vm.profile.loggedIn -->
+
+                    </ul>
+                    <!-- End navigation menu -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Navigation Bar-->
+    <!-- =======================
+             ===== START PAGE ======
+             ======================= -->
+
+    <div class="wrapper">
+        <div class="container">
+
+
+            <!-- uiView:  -->
+            <div ui-view="" autoscroll="true" class="" style="">
+                <div class="row" ng-controller="partySearchController as vm" ng-init="vm.init()">
+                    <div class="col-md-12">
+                        <div class="card-box">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h4>
+                                        Party Search Request for jose garcia
+                                    </h4>
+                                </div>
+                                <div class="col-sm-12 table-scroll">
+
+
+
+                                    <div id="tblPartySearchResults_wrapper"
+                                        class="dataTables_wrapper form-inline no-footer">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="dataTables_length" id="tblPartySearchResults_length">
+                                                    <label>Show <select name="tblPartySearchResults_length"
+                                                            aria-controls="tblPartySearchResults"
+                                                            class="form-control input-sm">
+                                                            <option value="-1">All</option>
+                                                            <option value="10">10</option>
+                                                            <option value="25">25</option>
+                                                            <option value="50">50</option>
+                                                            <option value="100">100</option>
+                                                        </select> entries</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div id="tblPartySearchResults_filter" class="dataTables_filter">
+                                                    <label>Search:<input type="search" class="form-control input-sm"
+                                                            placeholder=""
+                                                            aria-controls="tblPartySearchResults"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table id="tblPartySearchResults" datatable="" dt-options="vm.dtOptions"
+                                            dt-columns="vm.dtColumns" dt-instance="vm.dtInstance"
+                                            dt-column-defs="vm.dtColumnDefs"
+                                            class="table table-responsive table-striped table-bordered dataTable no-footer"
+                                            style="display: table; width: 2347px;" role="grid"
+                                            aria-describedby="tblPartySearchResults_info">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th class="printRemove sorting" tabindex="0"
+                                                        aria-controls="tblPartySearchResults" rowspan="1" colspan="1"
+                                                        style="width: 334px;"
+                                                        aria-label="View: activate to sort column ascending">View</th>
+                                                    <th class="sorting" tabindex="0"
+                                                        aria-controls="tblPartySearchResults" rowspan="1" colspan="1"
+                                                        style="width: 217px;"
+                                                        aria-label="Case Number: activate to sort column ascending">Case
+                                                        Number</th>
+                                                    <th class="sorting" tabindex="0"
+                                                        aria-controls="tblPartySearchResults" rowspan="1" colspan="1"
+                                                        style="width: 920px;"
+                                                        aria-label="Case Style: activate to sort column ascending">Case
+                                                        Style</th>
+                                                    <th class="sorting" tabindex="0"
+                                                        aria-controls="tblPartySearchResults" rowspan="1" colspan="1"
+                                                        style="width: 217px;"
+                                                        aria-label="Case Status: activate to sort column ascending">Case
+                                                        Status</th>
+                                                    <th class="sorting" tabindex="0"
+                                                        aria-controls="tblPartySearchResults" rowspan="1" colspan="1"
+                                                        style="width: 334px;"
+                                                        aria-label="Case Type: activate to sort column ascending">Case
+                                                        Type</th>
+                                                    <th class="sorting_desc" tabindex="0"
+                                                        aria-controls="tblPartySearchResults" rowspan="1" colspan="1"
+                                                        style="width: 217px;" aria-sort="descending"
+                                                        aria-label="Filing Date: activate to sort column ascending">
+                                                        Filing Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTg5Mzc0OA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTg5Mzc0OA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV479555</td>
+                                                    <td>Capital One, N.a. vs Jose Garcia</td>
+                                                    <td>Active</td>
+                                                    <td>Collections Rule 3.740 Limited (09) - under 10,000</td>
+                                                    <td class="sorting_1">11/7/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTg4ODA0MA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTg4ODA0MA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25TR078707</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE</td>
+                                                    <td>Open</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">10/31/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTg4NDI2Mg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTg4NDI2Mg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV478023</td>
+                                                    <td>Portfolio Recovery Associates Llc vs Jose Garcia</td>
+                                                    <td>Active</td>
+                                                    <td>Collections Rule 3.740 Limited (09) - under 10,000</td>
+                                                    <td class="sorting_1">10/20/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTg4MTM0Nw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTg4MTM0Nw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV477537</td>
+                                                    <td>Capital One, N.a., Successor By Merger To Discover Bank vs Jose
+                                                        Garcia</td>
+                                                    <td>Active</td>
+                                                    <td>Other Collections Unlimited (09)</td>
+                                                    <td class="sorting_1">10/14/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTg2NzEzOA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTg2NzEzOA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2514936</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Garcia, Jose Luis</td>
+                                                    <td>Active</td>
+                                                    <td>Complaint - Misdemeanor</td>
+                                                    <td class="sorting_1">9/22/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTg2Mjc4OA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTg2Mjc4OA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV474742</td>
+                                                    <td>AMERICAN EXPRESS NATIONAL BANK vs JOSE GARCIA</td>
+                                                    <td>Active</td>
+                                                    <td>Collections Rule 3.740 Limited (09) - 10,000 - 25,000</td>
+                                                    <td class="sorting_1">9/10/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTg2MTYwMw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTg2MTYwMw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2514119</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE DEJESUS</td>
+                                                    <td>Active</td>
+                                                    <td>Complaint - Family Violence</td>
+                                                    <td class="sorting_1">9/10/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTg1NTg2Mg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTg1NTg2Mg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25TR063691</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Garcia, Jose Luis</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">8/28/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTg1MTExNQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTg1MTExNQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV473079</td>
+                                                    <td>Capital One, N.a., Successor By Merger To Discover Bank vs Jose
+                                                        Garcia</td>
+                                                    <td>Active</td>
+                                                    <td>Collections Rule 3.740 Limited (09) - under 10,000</td>
+                                                    <td class="sorting_1">8/19/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTg0NzA5Mg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTg0NzA5Mg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV472518</td>
+                                                    <td>American Express National Bank vs Jose Garcia</td>
+                                                    <td>Active</td>
+                                                    <td>Collections Rule 3.740 Limited (09) - under 10,000</td>
+                                                    <td class="sorting_1">8/11/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTg0MjAyMg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTg0MjAyMg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25TR056249</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE GARCIA</td>
+                                                    <td>Open</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">7/31/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTg0MTY2MA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTg0MTY2MA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25SC095688</td>
+                                                    <td>Jose Garcia vs Salvador Sanchez</td>
+                                                    <td>Active</td>
+                                                    <td>Small Claims $5,001 - $10,000</td>
+                                                    <td class="sorting_1">7/30/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTgyOTY0Ng==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTgyOTY0Ng%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25PR200344</td>
+                                                    <td>In the Matter of Ana Tran</td>
+                                                    <td>Closed/Active</td>
+                                                    <td>Minor's Compromise (PR3300)</td>
+                                                    <td class="sorting_1">7/7/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTgyOTY1MA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTgyOTY1MA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25PR200345</td>
+                                                    <td>In the Matter of Ava Tran</td>
+                                                    <td>Closed/Active</td>
+                                                    <td>Minor's Compromise (PR3300)</td>
+                                                    <td class="sorting_1">7/7/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTgyMDc4Mg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTgyMDc4Mg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CP000328</td>
+                                                    <td>Carmen Garibay Rios vs. Jose Garcia</td>
+                                                    <td>Active</td>
+                                                    <td>Establish Parental Relationship public</td>
+                                                    <td class="sorting_1">6/20/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTgxOTg1NA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTgxOTg1NA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV468237</td>
+                                                    <td>JOSE GARCIA vs JP'S TOWING AND TRANSPORTATION INC. et al</td>
+                                                    <td>Active</td>
+                                                    <td>Auto Unlimited (22)</td>
+                                                    <td class="sorting_1">6/16/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTgxNjI2Mw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTgxNjI2Mw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV467837</td>
+                                                    <td>ELIJAH PADGETT et al vs APPLE, INC., a Delaware corporation</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">6/11/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTc5ODA0MQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTc5ODA0MQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25TR035697</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE LUIS</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">5/13/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTc5NjYwMQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTc5NjYwMQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV465389</td>
+                                                    <td>Cavalry SPV I, LLC vs Jose Garcia</td>
+                                                    <td>Active</td>
+                                                    <td>Collections Rule 3.740 Limited (09) - 10,000 - 25,000</td>
+                                                    <td class="sorting_1">5/7/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTc5NDgwNA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTc5NDgwNA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25TR033942</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE CRUZ</td>
+                                                    <td>Open</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">5/7/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTc5MjU1OQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTc5MjU1OQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV464854</td>
+                                                    <td>CAROLYN MCKINNEY et al vs APPLE, INC., a Delaware corporation
+                                                    </td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">5/1/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTc3ODM1OQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTc3ODM1OQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25TR025931</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Garcia, Jose</td>
+                                                    <td>Open</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">4/10/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTc3MjcxNg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTc3MjcxNg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25TR024010</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">4/2/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTc2NjQzNw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTc2NjQzNw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2504287</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE</td>
+                                                    <td>Active</td>
+                                                    <td>Complaint - Misdemeanor</td>
+                                                    <td class="sorting_1">3/21/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTc2MzU2OA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTc2MzU2OA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2504000</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE, Jr.</td>
+                                                    <td>Active</td>
+                                                    <td>Complaint - Misdemeanor</td>
+                                                    <td class="sorting_1">3/18/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTc1MDI0NA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTc1MDI0NA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2502897</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE LUIS</td>
+                                                    <td>Sentenced</td>
+                                                    <td>Complaint - Misdemeanor</td>
+                                                    <td class="sorting_1">2/26/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTc1MDQ5NQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTc1MDQ5NQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV459812</td>
+                                                    <td>Alexis Little et al vs Google, LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">2/25/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTc0NzcwMw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTc0NzcwMw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV459548</td>
+                                                    <td>Devin Dolphin et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">2/21/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTc0NzcxOQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTc0NzcxOQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV459553</td>
+                                                    <td>George Ku vs Jose Garcia</td>
+                                                    <td>Active</td>
+                                                    <td>Commercial Unlawful Detainer Unlimited (31)</td>
+                                                    <td class="sorting_1">2/21/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTc0NzM3OA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTc0NzM3OA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25TR015125</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE REYNALDO</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">2/21/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTcxNDQ0MQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTcxNDQ0MQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25TR005310</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">1/16/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTcxNTMzOA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTcxNTMzOA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV456752</td>
+                                                    <td>Nicole Shuravloff et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">1/15/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTcxMTQyNw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTcxMTQyNw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV456255</td>
+                                                    <td>JOHN KLUSENDORF vs ROBERT GROVE et al</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Residential Unlawful Detainer Limited (32) - under 10,000</td>
+                                                    <td class="sorting_1">1/10/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTcxMTI3MQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTcxMTI3MQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV456202</td>
+                                                    <td>JOSEPH MAIURO et al vs GOOGLE LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">1/9/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTcxMTI4Mw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTcxMTI4Mw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>25CV456206</td>
+                                                    <td>CHRIS OCHAL et al vs GOOGLE LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">1/9/2025</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTcwODQ5OQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTcwODQ5OQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>B2500035</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE LUIS</td>
+                                                    <td>Active</td>
+                                                    <td>Complaint - Misdemeanor</td>
+                                                    <td class="sorting_1">1/6/2025</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTcwMjAxMQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTcwMjAxMQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR092634</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE LUIS</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">12/24/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTcwMDA1NA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTcwMDA1NA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2420113</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE LOPEZ</td>
+                                                    <td>Suspended</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">12/20/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY5OTI5NA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY5OTI5NA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR091309</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE LUIS</td>
+                                                    <td>Open</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">12/19/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY5OTMxOA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY5OTMxOA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR091325</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE LUIS</td>
+                                                    <td>Open</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">12/19/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTcwMDM1Mg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTcwMDM1Mg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV454491</td>
+                                                    <td>JOSE GARCIA et al vs GENERAL MOTORS LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Breach of Contract/Warranty Unlimited (06)</td>
+                                                    <td class="sorting_1">12/18/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY5ODE0NQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY5ODE0NQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV454118</td>
+                                                    <td>Midland Credit Management Inc. vs Jose Garcia</td>
+                                                    <td>Active</td>
+                                                    <td>Collections Limited by assignee of record</td>
+                                                    <td class="sorting_1">12/13/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY5MTg2OA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY5MTg2OA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR087619</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE GABRIEL</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">12/5/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY5MDU2MQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY5MDU2MQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24FL003946</td>
+                                                    <td>Jose Garcia vs Gloria Mota Cendejas</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Dissolution Summary Joint Petition</td>
+                                                    <td class="sorting_1">12/3/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY5MTY5MQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY5MTY5MQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV453046</td>
+                                                    <td>Alexander Hejazi et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">12/2/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY4NTc0Ng==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY4NTc0Ng%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CP000679</td>
+                                                    <td>Angeles Gonzalez vs. Jose Garcia</td>
+                                                    <td>Active</td>
+                                                    <td>Establish Parental Relationship public</td>
+                                                    <td class="sorting_1">11/22/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY4NjM5OA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY4NjM5OA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV452393</td>
+                                                    <td>Aaron Conaway et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">11/21/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY4NjA2Ng==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY4NjA2Ng%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV452317</td>
+                                                    <td>Lori King et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">11/20/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY4NTQzOA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY4NTQzOA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV452183</td>
+                                                    <td>Bradley Cook et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">11/19/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY3OTQxMw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY3OTQxMw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2418031</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE LUIS, Jr.</td>
+                                                    <td>Sentenced</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">11/13/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY3NTM5Mg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY3NTM5Mg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV451187</td>
+                                                    <td>Chad Franek et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">11/7/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY3NTkzMQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY3NTkzMQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV451225</td>
+                                                    <td>Alma Vazquez et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">11/7/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY2NDYwNA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY2NDYwNA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR073352</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Garcia, Jose Refugio</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">10/23/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY2NDk4OQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY2NDk4OQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2416861</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE</td>
+                                                    <td>Active</td>
+                                                    <td>Complaint - Misdemeanor</td>
+                                                    <td class="sorting_1">10/23/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY1MzA2MA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY1MzA2MA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV449938</td>
+                                                    <td>Daniel Hannah et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">10/21/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY1MzExNg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY1MzExNg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV449948</td>
+                                                    <td>Earnest Eckerson et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">10/21/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY0MjkyMw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY0MjkyMw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV449591</td>
+                                                    <td>Deanna Strong et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">10/16/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY0Mjk2Mg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY0Mjk2Mg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV449601</td>
+                                                    <td>Amanda Nunez et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">10/16/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY0MjU1Mg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY0MjU1Mg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR071137</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE LUIS</td>
+                                                    <td>Open</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">10/16/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTY0MjYzNg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTY0MjYzNg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV449561</td>
+                                                    <td>JOSE GARCIA et al vs RAYON-X ENGINEERING, LLC et al</td>
+                                                    <td>Active</td>
+                                                    <td>Auto Unlimited (22)</td>
+                                                    <td class="sorting_1">10/15/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTYzNjkwMQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTYzNjkwMQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV449131</td>
+                                                    <td>Sonya Blooflat et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">10/8/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTYyMjQ1OA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTYyMjQ1OA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR067902</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE LUIS</td>
+                                                    <td>Open</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">10/3/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTYyMjI0Mw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTYyMjI0Mw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV448534</td>
+                                                    <td>Aret Derjangocyan et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">10/1/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTU4NzMzNQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTU4NzMzNQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR063573</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Garcia, Jose Javier</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">9/13/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTU4NzU2OA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTU4NzU2OA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2414730</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE TRINIDAD, Jr.</td>
+                                                    <td>Active</td>
+                                                    <td>Complaint - Family Violence</td>
+                                                    <td class="sorting_1">9/13/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTU3OTA2Mw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTU3OTA2Mw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV447000</td>
+                                                    <td>Jonathan Ramsey et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">9/11/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTU3OTA2Mw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTU3OTA2Mw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV447000</td>
+                                                    <td>Jonathan Ramsey et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">9/11/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTU2ODE2NQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTU2ODE2NQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR061281</td>
+                                                    <td>
+                                                        THE PEOPLE OF THE STATE OF CALIFORNIA vs.
+                                                        JOSE GARCIA</td>
+                                                    <td>Closed</td>
+                                                    <td>Owner Responsibility</td>
+                                                    <td class="sorting_1">9/5/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTU3MDQ0Mw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTU3MDQ0Mw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV446765</td>
+                                                    <td>Sherri Turner et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">9/4/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTU2Nzc3OQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTU2Nzc3OQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV446531</td>
+                                                    <td>JOSE GARCIA, Jr. vs MICHAEL CRABTREE</td>
+                                                    <td>Active</td>
+                                                    <td>Auto Unlimited (22)</td>
+                                                    <td class="sorting_1">9/3/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTU2MDUwOA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTU2MDUwOA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR060797</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE LUIS, Jr.</td>
+                                                    <td>Open</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">9/3/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTU2MDUxNw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTU2MDUxNw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR060806</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE LUIS, Jr.</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">9/3/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTU1ODU5Mg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTU1ODU5Mg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR060440</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Garcia, Jose Maria</td>
+                                                    <td>Open</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">8/30/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTU0MDU3MQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTU0MDU3MQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV445330</td>
+                                                    <td>John Sligh et al vs Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">8/16/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTUyNDE0OQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTUyNDE0OQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2412690</td>
+                                                    <td>In the Matter of JOSE GARCIA</td>
+                                                    <td>Closed</td>
+                                                    <td>Petition - Terminate PC290 Registration</td>
+                                                    <td class="sorting_1">8/6/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTUwMDI1Ng==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTUwMDI1Ng%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV444363</td>
+                                                    <td>Ray Navarrete vs Jose Garcia</td>
+                                                    <td>Active</td>
+                                                    <td>Auto Unlimited (22)</td>
+                                                    <td class="sorting_1">7/19/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ4OTM4NQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ4OTM4NQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV443288</td>
+                                                    <td>Dylan Newman et al vs GOOGLE LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">7/16/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ4ODc3NQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ4ODc3NQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR051675</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Garcia, Jose Cedesma</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">7/16/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ4MTk2Mw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ4MTk2Mw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR049317</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE ANTONIO</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">6/28/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ3OTAzNQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ3OTAzNQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR047846</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE MANUEL</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">6/24/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ3ODM1Nw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ3ODM1Nw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV441517</td>
+                                                    <td>PALM COURT SAN JOSE, L.P. vs JOSE GARCIA</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Residential Unlawful Detainer Limited (32) - under 10,000</td>
+                                                    <td class="sorting_1">6/18/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ3Mzg0Nw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ3Mzg0Nw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24SC092440</td>
+                                                    <td>USA Touch Up Auto Body Shop vs Jose Garcia</td>
+                                                    <td>Dismissed</td>
+                                                    <td>Small Claims $1501 - $5000</td>
+                                                    <td class="sorting_1">6/14/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ3NDIzMg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ3NDIzMg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV441162</td>
+                                                    <td>Jose Garcia vs Brightview Landscapes, LLC et al</td>
+                                                    <td>Active</td>
+                                                    <td>Other PI/PD/WD Unlimited (23)</td>
+                                                    <td class="sorting_1">6/13/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ3MTA2Nw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ3MTA2Nw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV440833</td>
+                                                    <td>Jose Garcia vs Jonn Klusendorf et al</td>
+                                                    <td>Active</td>
+                                                    <td>Other PI/PD/WD Unlimited (23)</td>
+                                                    <td class="sorting_1">6/10/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ1NjY0NA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ1NjY0NA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR034116</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Garcia, Jose Armulfo Morales</td>
+                                                    <td>Closed</td>
+                                                    <td>Notice to Correct</td>
+                                                    <td class="sorting_1">5/15/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ1MjU2MQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ1MjU2MQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV438118</td>
+                                                    <td>Sandy Bray et al vs GOOGLE LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">5/6/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ1MzMxMQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ1MzMxMQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV438296</td>
+                                                    <td>Sara Deochers et al vs GOOGLE LLC,</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">5/6/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ0NjI0OA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ0NjI0OA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR029458</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Garcia, Jose Ignacio</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">4/25/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ0MjM0Ng==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ0MjM0Ng%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR027356</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Garcia, Jose Antonio</td>
+                                                    <td>Closed</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">4/18/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ0NTEzNw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ0NTEzNw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV436147</td>
+                                                    <td>Christopher Brewer et al vs GOOGLE LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">4/17/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQ0MjYyNg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQ0MjYyNg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV435615</td>
+                                                    <td>Brandon Krum et al vs GOOGLE LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">4/15/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQzNzAyOA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQzNzAyOA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2405640</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA vs. GARCIA, JOSE LOPEZ
+                                                    </td>
+                                                    <td>Sentenced</td>
+                                                    <td>Complaint - Misdemeanor</td>
+                                                    <td class="sorting_1">4/15/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQzNzE2Nw==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQzNzE2Nw%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2405667</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        GARCIA, JOSE LOPEZ</td>
+                                                    <td>Sentenced</td>
+                                                    <td>Complaint - Family Violence</td>
+                                                    <td class="sorting_1">4/15/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQzMTY1Ng==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQzMTY1Ng%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>B2400957</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Garcia, Jose Alfredo</td>
+                                                    <td>Sentenced</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">4/12/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQyMTY2OQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQyMTY2OQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV434666</td>
+                                                    <td>Krystalowich, et al. v. Google LLC</td>
+                                                    <td>Active</td>
+                                                    <td>Mass Tort Unlimited (40)</td>
+                                                    <td class="sorting_1">4/8/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQyMTMwMQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQyMTMwMQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24TR024243</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA
+                                                        vs.
+                                                        Garcia, Jose Z, JR</td>
+                                                    <td>Open</td>
+                                                    <td>Adult Traffic</td>
+                                                    <td class="sorting_1">4/8/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTQxMzczMg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTQxMzczMg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24FL001033</td>
+                                                    <td>Maria Barajas vs Jose Garcia</td>
+                                                    <td>Active</td>
+                                                    <td>Legal Separation w/ Minor Children</td>
+                                                    <td class="sorting_1">3/19/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTM5MDAxNQ==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTM5MDAxNQ%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>C2403915</td>
+                                                    <td>THE PEOPLE OF THE STATE OF CALIFORNIA vs. Garcia, Jose De Jesus
+                                                    </td>
+                                                    <td>Active</td>
+                                                    <td>Complaint - Felony</td>
+                                                    <td class="sorting_1">3/14/2024</td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTM2MDc1NA==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTM2MDc1NA%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV432076</td>
+                                                    <td>San Jose Apartment Owner SPE LLC vs Jose Garcia</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Residential Unlawful Detainer Limited (32) - under 10,000</td>
+                                                    <td class="sorting_1">2/28/2024</td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class=" printRemove"><a
+                                                            ui-sref="case({id:'NTMyOTg1Mg==',state:'Search By Party'})"
+                                                            print-remove=""
+                                                            class="btn btn-primary btn-custom waves-effect w-md waves-light m-b-5 printRemove"
+                                                            href="/case/NTMyOTg1Mg%3D%3D"><i class="md md-folder"></i>
+                                                            View Case</a></td>
+                                                    <td>24CV430800</td>
+                                                    <td>In the Matter of Jose Garcia</td>
+                                                    <td>Closed/Inactive</td>
+                                                    <td>Change of Name</td>
+                                                    <td class="sorting_1">2/13/2024</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="dataTables_info" id="tblPartySearchResults_info"
+                                                    role="status" aria-live="polite">Showing 1 to 100 of 2,106 entries
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="dataTables_paginate paging_simple_numbers"
+                                                    id="tblPartySearchResults_paginate">
+                                                    <ul class="pagination">
+                                                        <li class="disabled"><a href="#" class="previous"
+                                                                aria-controls="tblPartySearchResults" data-dt-idx="0"
+                                                                tabindex="0"
+                                                                id="tblPartySearchResults_previous">Previous</a></li>
+                                                        <li></li>
+                                                        <li class="active"><a href="#" class=""
+                                                                aria-controls="tblPartySearchResults" data-dt-idx="1"
+                                                                tabindex="0">1</a></li>
+                                                        <li><a href="#" class="" aria-controls="tblPartySearchResults"
+                                                                data-dt-idx="2" tabindex="0">2</a></li>
+                                                        <li><a href="#" class="" aria-controls="tblPartySearchResults"
+                                                                data-dt-idx="3" tabindex="0">3</a></li>
+                                                        <li><a href="#" class="" aria-controls="tblPartySearchResults"
+                                                                data-dt-idx="4" tabindex="0">4</a></li>
+                                                        <li><a href="#" class="" aria-controls="tblPartySearchResults"
+                                                                data-dt-idx="5" tabindex="0">5</a></li>
+                                                        <li class="disabled"><a href="#"
+                                                                onclick="event.preventDefault()">…</a></li>
+                                                        <li><a href="#" class="" aria-controls="tblPartySearchResults"
+                                                                data-dt-idx="6" tabindex="0">22</a></li>
+                                                        <li><a href="#" class="next"
+                                                                aria-controls="tblPartySearchResults" data-dt-idx="7"
+                                                                tabindex="0" id="tblPartySearchResults_next">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <toaster-container></toaster-container>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert alert-info col-md-12 ng-hide" ng-show="vm.searchErrorMessage !== ''">
+                        <h3>
+                            <strong>
+                                <i class="md md-warning"></i>
+
+                            </strong>
+                        </h3>
+                    </div>
+                    <div>
+                        <br><br><br>
+                        <button type="button" class="btn btn-primary waves-effect waves-light m-b-5"
+                            ng-click="vm.goBackSearch()">
+                            <i class="md md-keyboard-arrow-left"></i> <span>Go Back To Search</span>
+                        </button>
+                        <br><br>
+                    </div>
+                </div>
+                <!-- End of Row -->
+            </div>
+
+
+            <!-- Footer -->
+            <footer class="footer text-right">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            2025 © Superior Court of California, County of Santa Clara <br>
+
+                            Build Information: Local - 0 <br>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer -->
+
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- End wrapper -->
+    <script src="/Scripts/libs/jquery.js"></script>
+    <script src="/Scripts/libs/jQuery.print.js"></script>
+    <script src="/Scripts/libs/bootstrap.js"></script>
+    <script src="/Scripts/libs/jquery.dataTables.js"></script>
+    <script src="/Scripts/libs/dataTables.buttons.js"></script>
+    <script src="/Scripts/libs/numeric-comma.js"></script>
+    <script src="/Scripts/libs/buttons.print.js"></script>
+    <script src="/Scripts/libs/chart.js"></script>
+    <script src="/Scripts/libs/underscore.js"></script>
+    <script src="/Scripts/libs/moment.js"></script>
+    <script src="/Scripts/libs/bootstrap-switch.js"></script>
+    <script src="/Scripts/libs/vis.js"></script>
+    <script src="/Scripts/libs/angular.js"></script>
+    <script src="/Scripts/libs/angular-animate.js"></script>
+    <script src="/Scripts/libs/print.min.js"></script>
+    <script src="/Scripts/libs/angular-touch.js"></script>
+    <script src="/Scripts/libs/restangular.js"></script>
+    <script src="/Scripts/libs/angular-ui-router.js"></script>
+    <script src="/Scripts/libs/angular-moment.js"></script>
+    <script src="/Scripts/libs/angular-chart.js"></script>
+    <script src="/Scripts/libs/angular-toastr.js"></script>
+    <script src="/Scripts/libs/angular-toastr.tpls.js"></script>
+    <script src="/Scripts/libs/ngDialog.js"></script>
+    <script src="/Scripts/libs/angular-jwt.js"></script>
+    <script src="/Scripts/libs/angular-datatables.js"></script>
+    <script src="/Scripts/libs/angular-datatables.bootstrap.js"></script>
+    <script src="/Scripts/libs/angular-datatables.buttons.js"></script>
+    <script src="/Scripts/libs/ui-bootstrap.js"></script>
+    <script src="/Scripts/libs/ui-bootstrap-tpls.js"></script>
+    <script src="/Scripts/libs/angular-bootstrap-switch.js"></script>
+    <script src="/Scripts/libs/angular-base64.js"></script>
+    <script src="/Scripts/libs/angular-pdfjs-viewer.js"></script>
+    <script src="/Scripts/libs/angular-filter.js"></script>
+    <script src="/Scripts/libs/calendar.js"></script>
+    <script src="/Scripts/libs/ng-currency.js"></script>
+    <script src="/Scripts/libs/ngMask.js"></script>
+    <script src="/Scripts/libs/fullcalendar.js"></script>
+    <script src="/Scripts/libs/gcal.js"></script>
+    <script src="/Scripts/libs/angular-file-upload.js"></script>
+    <script src="/Scripts/libs/angular-vis.js"></script>
+    <script src="/Scripts/libs/time.js"></script>
+    <script src="/Scripts/libs/angular-pretty-xml.js"></script>
+    <script src="/Scripts/libs/api-check.min.js"></script>
+    <script src="/Scripts/libs/formly.min.js"></script>
+    <script src="/Scripts/libs/angular-formly-templates-bootstrap.min.js"></script>
+    <script src="/Scripts/libs/angular-sanitize.js"></script>
+    <script src="/Scripts/libs/angular-recaptcha.min.js"></script>
+
+    <script src="/Scripts/tools/web/pdf.js"></script>
+    <script src="/Content/js/jquery.app.js"></script>
+    <script src="/Content/js/angularPrint.js"></script>
+    <script src="/Scripts/app.js"></script>
+    <script src="/Scripts/constants/partners.constants.js"></script>
+    <script src="/Scripts/constants/routes.constants.js"></script>
+    <script src="/Scripts/constants/ui.constants.js"></script>
+    <script src="/Scripts/app.routes.js"></script>
+    <script src="/Scripts/services/announcementService.js"></script>
+    <script src="/Scripts/services/authTokenService.js"></script>
+    <script src="/Scripts/services/caseTokenService.js"></script>
+    <script src="/Scripts/services/currentUserService.js"></script>
+    <script src="/Scripts/services/featureFlagService.js"></script>
+    <script src="/Scripts/services/formEncoderService.js"></script>
+    <script src="/Scripts/services/hearingLookupService.js"></script>
+    <script src="/Scripts/services/localStorage.js"></script>
+    <script src="/Scripts/services/notifyService.js"></script>
+    <script src="/Scripts/services/oAuthService.js"></script>
+    <script src="/Scripts/services/reportService.js"></script>
+    <script src="/Scripts/services/restAngularOAuthService.js"></script>
+    <script src="/Scripts/services/rtEventsService.js"></script>
+    <script src="/Scripts/services/searchDataTablesHelpers.js"></script>
+    <script src="/Scripts/services/sessionStorage.js"></script>
+    <script src="/Scripts/services/userModel.js"></script>
+    <script src="/Scripts/directives/announcements.js"></script>
+    <script src="/Scripts/directives/case-details.js"></script>
+    <script src="/Scripts/directives/change-password.js"></script>
+    <script src="/Scripts/directives/pwCheck.js"></script>
+    <script src="/Scripts/directives/search-by-casenumber.js"></script>
+    <script src="/Scripts/directives/security-policy.js"></script>
+    <script src="/Scripts/directives/true-false-shield.js"></script>
+    <script src="/Scripts/directives/warrant-details.js"></script>
+    <script src="/Scripts/filters/location.js"></script>
+    <script src="/Scripts/administration/administration.routes.js"></script>
+    <script src="/Scripts/controllers/advancedSearchController.js"></script>
+    <script src="/Scripts/controllers/alphaSortController.js"></script>
+    <script src="/Scripts/controllers/attorneyConsentDialogController.js"></script>
+    <script src="/Scripts/controllers/attorneyConsentSearchController.js"></script>
+    <script src="/Scripts/controllers/attorneySearchController.js"></script>
+    <script src="/Scripts/controllers/businessSearchController.js"></script>
+    <script src="/Scripts/controllers/calendarController.js"></script>
+    <script src="/Scripts/controllers/calendarLanding.js"></script>
+    <script src="/Scripts/controllers/calendarSearchController.js"></script>
+    <script src="/Scripts/controllers/caseResultController.js"></script>
+    <script src="/Scripts/controllers/caseViewController.js"></script>
+    <script src="/Scripts/controllers/criminalProtectiveOrdersController.js"></script>
+    <script src="/Scripts/controllers/dashboardController.js"></script>
+    <script src="/Scripts/controllers/dcssLongController.js"></script>
+    <script src="/Scripts/controllers/docsController.js"></script>
+    <script src="/Scripts/controllers/favoritesController.js"></script>
+    <script src="/Scripts/controllers/felonyArraignmentController.js"></script>
+    <script src="/Scripts/controllers/fileDateSearchController.js"></script>
+    <script src="/Scripts/controllers/hearingsSearchController.js"></script>
+    <script src="/Scripts/controllers/homeController.js"></script>
+    <script src="/Scripts/controllers/loginController.js"></script>
+    <script src="/Scripts/controllers/logoffController.js"></script>
+    <script src="/Scripts/controllers/minuteOrderController.js"></script>
+    <script src="/Scripts/controllers/navController.js"></script>
+    <script src="/Scripts/controllers/partyAgencySearchController.js"></script>
+    <script src="/Scripts/controllers/partySearchController.js"></script>
+    <script src="/Scripts/controllers/pfnSearchController.js"></script>
+    <script src="/Scripts/controllers/probateNotesController.js"></script>
+    <script src="/Scripts/controllers/probationController.js"></script>
+    <script src="/Scripts/controllers/profileController.js"></script>
+    <script src="/Scripts/controllers/reportController.js"></script>
+    <script src="/Scripts/controllers/searchAttorneyHearingController.js"></script>
+    <script src="/Scripts/controllers/searchController.js"></script>
+    <script src="/Scripts/controllers/trafficSearchController.js"></script>
+    <script src="/Scripts/controllers/warrantsController.js"></script>
+    <script src="/Scripts/controllers/warrantSearchController.js"></script>
+    <script src="/Scripts/controllers/warrantView.js"></script>
+    <script src="/Scripts/partners/partners.routes.js"></script>
+    <script src="/Scripts/partners/controllers/caHomeController.js"></script>
+    <script src="/Scripts/partners/controllers/cpHomeController.js"></script>
+    <script src="/Scripts/partners/controllers/daHomeController.js"></script>
+    <script src="/Scripts/partners/controllers/pdHomeController.js"></script>
+    <script src="/Scripts/partners/controllers/pdidoadoHomeController.js"></script>
+    <script src="/Scripts/partners/controllers/prHomeController.js"></script>
+    <script src="/Scripts/administration/controllers/adminEventsController.js"></script>
+    <script src="/Scripts/administration/controllers/adminStatsController.js"></script>
+    <script src="/Scripts/administration/controllers/manageAccountsController.js"></script>
+    <script src="/Scripts/administration/controllers/manageAgenciesController.js"></script>
+    <script src="/Scripts/administration/controllers/manageAgencyController.js"></script>
+    <script src="/Scripts/googleAnalytics.js"></script>
+    <script src="/Scripts/angular-pdfjs-viewer.js"></script>
+
+
+
+    <div id="1p-live-region" role="status" aria-live="polite" aria-atomic="true" aria-relevant="all"
+        style="clip: rect(0px, 0px, 0px, 0px); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; overflow-wrap: normal;">
+    </div>
+    <div id="1p-live-region" role="status" aria-live="polite" aria-atomic="true" aria-relevant="all"
+        style="clip: rect(0px, 0px, 0px, 0px); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; overflow-wrap: normal;">
+    </div><input id="fileInput" class="fileInput" type="file"><input id="fileInput" class="fileInput" type="file"><input
+        id="fileInput" class="fileInput" type="file"><input id="fileInput" class="fileInput" type="file">
+    <div
+        style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;">
+        <div
+            style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;">
+        </div>
+        <div style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"
+            class="g-recaptcha-bubble-arrow"></div>
+        <div style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"
+            class="g-recaptcha-bubble-arrow"></div>
+        <div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge expires in two minutes"
+                style="width: 100%; height: 100%;" name="c-4gy95ibmdxfj" frameborder="0" scrolling="no"
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=TkacYOdEJbdB_JjX802TMer9&amp;k=6Lej28wUAAAAAAa44bVlVhkJrBDvVNIW2Wpdphx3&amp;bft=0dAFcWeA71N6O-VTkX0iuZGNDNgEVKJxKbg_8tbAXkuyqk22ajYcVL3PwNQ-2nNQP3U6xXk-8LEJeZXzmF-7J2qIrnU2sqfbfe7g"></iframe>
+        </div>
+    </div>
+    <div
+        style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;">
+        <div
+            style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;">
+        </div>
+        <div style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"
+            class="g-recaptcha-bubble-arrow"></div>
+        <div style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"
+            class="g-recaptcha-bubble-arrow"></div>
+        <div style="z-index: 2000000000; position: relative; width: 0px; height: 0px;"><iframe
+                title="recaptcha challenge expires in two minutes" style="width: 0px; height: 0px;"
+                name="c-6qa9vjimvug7" frameborder="0" scrolling="no"
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=TkacYOdEJbdB_JjX802TMer9&amp;k=6Lej28wUAAAAAAa44bVlVhkJrBDvVNIW2Wpdphx3&amp;bft=0dAFcWeA6tPSvUHyOC2EAVzprgu27PAVBv5_wXK7DW919YLOACB5ZmhIdQDORdIHH3zc8wFrvAmZJBh1tSVCRLMw_DOkStipGxjQ"></iframe>
+        </div>
+    </div>
+    <div
+        style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;">
+        <div
+            style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;">
+        </div>
+        <div style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"
+            class="g-recaptcha-bubble-arrow"></div>
+        <div style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"
+            class="g-recaptcha-bubble-arrow"></div>
+        <div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge expires in two minutes"
+                style="width: 100%; height: 100%;" name="c-bd3puujv3oyv" frameborder="0" scrolling="no"
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=TkacYOdEJbdB_JjX802TMer9&amp;k=6Lej28wUAAAAAAa44bVlVhkJrBDvVNIW2Wpdphx3&amp;bft=0dAFcWeA5p3W5BY1dEPfB-OZ9NcIgyLoF_hA02eQJbNEJk8e8-X84DNWUn8paHWVqQseKOEajviXZc4gswHvvqYF8NanKFK0FzrQ"></iframe>
+        </div>
+    </div>
+    <div
+        style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;">
+        <div
+            style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;">
+        </div>
+        <div style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"
+            class="g-recaptcha-bubble-arrow"></div>
+        <div style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"
+            class="g-recaptcha-bubble-arrow"></div>
+        <div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge expires in two minutes"
+                style="width: 100%; height: 100%;" name="c-8ok62ljy778" frameborder="0" scrolling="no"
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=TkacYOdEJbdB_JjX802TMer9&amp;k=6Lej28wUAAAAAAa44bVlVhkJrBDvVNIW2Wpdphx3&amp;bft=0dAFcWeA6__sbW5QR64hYTokhbIk5RQ58FzkqqNiNoWN7GKGd4HETykMdJfPS27uNNhQG_hUmwBjOBrzCWNPUneXZNKxqXK1p6Mg"></iframe>
+        </div>
+    </div>
+    <div id="1p-live-region" role="status" aria-live="polite" aria-atomic="true" aria-relevant="all"
+        style="clip: rect(0px, 0px, 0px, 0px); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; overflow-wrap: normal;">
+    </div>
+    <div id="1p-live-region" role="status" aria-live="polite" aria-atomic="true" aria-relevant="all"
+        style="clip: rect(0px, 0px, 0px, 0px); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; overflow-wrap: normal;">
+    </div>
+    <div id="1p-live-region" role="status" aria-live="polite" aria-atomic="true" aria-relevant="all"
+        style="clip: rect(0px, 0px, 0px, 0px); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; overflow-wrap: normal;">
+    </div><input id="fileInput" class="fileInput" type="file"><input id="fileInput" class="fileInput" type="file"><input
+        id="fileInput" class="fileInput" type="file"><input id="fileInput" class="fileInput" type="file">
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
